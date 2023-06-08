@@ -29,7 +29,7 @@ menu:
 
 
 params:
-    description: ""
+    description: "I'm a second year PhD econ student at Bocconi Univerisity. Political econ, autocracies, collective memory and others"
     author: Nina Nikiforova
     googleAnalyticsID: 
     DateFormat: "January 2006"
@@ -56,7 +56,7 @@ params:
           title: 
           subtitle:  
           imageUrl: "/IMAGE.jpg"
-          imageWidth: 170
+          imageWidth: 125
           imageHeight: 170
           imageTitle: 
           buttons:
@@ -70,19 +70,11 @@ params:
         - name: CV
           url: "/cv.pdf"
         - name: Email
-          url: "mailto:pascal.michaillat@gmail.com"
+          url: "mailto:nina.nikiforova@phd.unibocconi.it"
         - name: Location
           url: /location/
-        - name: Office Hours
-          url: /officehours/
-        - name: Google Scholar
-          url: "https://scholar.google.com/citations?user=cL23w-4AAAAJ"
-        - name: YouTube
-          url: "https://www.youtube.com/@pmichaillat"
-        - name: GitHub
-          url: "https://github.com/pmichaillat"
-        - name: Substack
-          url: "https://pmichaillat.substack.com"
+        - name: Twitter
+          url: "https://twitter.com/nikiforovannina"
 
     assets:
         disableHLJS: true
@@ -91,7 +83,7 @@ params:
         hiddenInList: true
         hiddenInSingle: true
     label:
-      text: "Pascal Michaillat"
+      text: "Nina Nikiforova"
       icon: /favicon.ico
       iconHeight: 18
 
