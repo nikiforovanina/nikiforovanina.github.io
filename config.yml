@@ -7,7 +7,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 
 social:
-    twitter: pmichaillat
+    twitter: nikiforovannina
 
 taxonomies:
     tag: tags
@@ -55,7 +55,7 @@ params:
           enabled: true
           title: 
           subtitle:  
-          imageUrl: "/picture.jpeg"
+          imageUrl: "/IMAGE.jpeg"
           imageWidth: 170
           imageHeight: 170
           imageTitle: 
