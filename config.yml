@@ -10,22 +10,7 @@ social:
     twitter: nikiforovannina
 
 taxonomies:
-    tag: tags
-
-menu:
-    main:
-        - name: Papers
-          url: /papers/
-          weight: 1
-        - name: Courses
-          url: /courses/
-          weight: 2
-        - name: Design
-          url: /design/
-          weight: 3
-        - name: Tags
-          url: /tags/
-          weight: 4     
+    tag: tags 
 
 
 params:
@@ -59,13 +44,7 @@ params:
           imageWidth: 100
           imageHeight: 150
           imageTitle: 
-          buttons:
-            - name: Papers
-              url: /papers/
-            - name: Courses
-              url: /courses/
-            - name: Design
-              url: /design/
+        
     socialIcons:
         - name: CV
           url: "/cv.pdf"
