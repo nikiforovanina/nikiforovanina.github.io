@@ -27,8 +27,6 @@ params:
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
     ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: false
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -47,7 +45,7 @@ params:
         
     socialIcons:
         - name: CV
-          url: "/cv.pdf"
+          url: "https://www.dropbox.com/s/rxwdt79olifl6o7/cv.pdf?dl=0"
         - name: Email
           url: "mailto:nina.nikiforova@phd.unibocconi.it"
         - name: Location
