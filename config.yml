@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/" 
-title: Pascal Michaillat
+baseURL: "https://ninanikiforova.org/" 
+title: Nina Nikiforova
 paginate: 20
 theme: PaperMod
 
@@ -26,14 +26,12 @@ menu:
         - name: Tags
           url: /tags/
           weight: 4     
-        - name: Newsletter
-          url: https://pmichaillat.substack.com
-          weight: 5
+
 
 params:
-    description: "I am an Associate Professor of Economics at UC Santa Cruz. I work on unemployment, economic slack, business cycles, macroeconomic policy, and metascience."
-    author: Pascal Michaillat
-    googleAnalyticsID: "G-97G4MZ4061"
+    description: ""
+    author: Nina Nikiforova
+    googleAnalyticsID: 
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: true
@@ -55,12 +53,12 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Pascal Michaillat
-          subtitle: "I am an Associate Professor of Economics at the University of California, Santa Cruz. I work on unemployment, economic slack, business cycles, macroeconomic policy, and metascience."
+          title: 
+          subtitle:  
           imageUrl: "/picture.jpeg"
           imageWidth: 170
           imageHeight: 170
-          imageTitle: Pascal Michaillat
+          imageTitle: 
           buttons:
             - name: Papers
               url: /papers/
