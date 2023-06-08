@@ -53,11 +53,11 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: 
-          subtitle:  
+          title: Nina Nikiforova
+          subtitle:  "I'm a second year PhD econ student at Bocconi Univerisity. Political econ, autocracies, collective memory and others"
           imageUrl: "/IMAGE.jpg"
-          imageWidth: 125
-          imageHeight: 170
+          imageWidth: 100
+          imageHeight: 150
           imageTitle: 
           buttons:
             - name: Papers
