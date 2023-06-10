@@ -45,7 +45,7 @@ params:
         
     socialIcons:
         - name: CV
-          url: "https://www.dropbox.com/s/rxwdt79olifl6o7/cv.pdf?dl=0"
+          url: "/cv.pdf"
         - name: Email
           url: "mailto:nina.nikiforova@phd.unibocconi.it"
         - name: Twitter
