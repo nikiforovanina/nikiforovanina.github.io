@@ -48,8 +48,6 @@ params:
           url: "https://www.dropbox.com/s/rxwdt79olifl6o7/cv.pdf?dl=0"
         - name: Email
           url: "mailto:nina.nikiforova@phd.unibocconi.it"
-        - name: Location
-          url: /location/
         - name: Twitter
           url: "https://twitter.com/nikiforovannina"
 
@@ -61,7 +59,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Nina Nikiforova"
-      icon: /favicon.ico
+      icon: "/apple-touch-icon.png"
       iconHeight: 18
 
 markup:
