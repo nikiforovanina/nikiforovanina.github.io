@@ -14,7 +14,8 @@ taxonomies:
 
 
 params:
-    description: Hey! I'm a second year PhD Econ student at Bocconi Univerisity. I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, collective memory and others.\n Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
+    description: Hey! I'm a second year PhD Econ student at Bocconi Univerisity. I am interested in topics spanning the literature of political     economy and political science, such as authoritarianism, collective actions problems, collective memory and others. 
+    Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
     author: Nina Nikiforova
     googleAnalyticsID: 
     DateFormat: "January 2006"
@@ -37,7 +38,8 @@ params:
     profileMode:
           enabled: true
           title: Nina Nikiforova
-          subtitle:  Hey! I'm a second year PhD Econ student at Bocconi Univerisity.I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, collective memory and others.\n Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
+          subtitle:  Hey! I'm a second year PhD Econ student at Bocconi Univerisity.I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, collective memory and others.
+          Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
           imageUrl: "/IMAGE.jpg"
           imageWidth: 150
           imageHeight: 150
