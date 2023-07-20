@@ -1,4 +1,5 @@
-#Work in progress
+Work in progress
+---
 
 1. Whom to repress? On a repressive logic of autocrats [Draft available upon request]
 2.  Symbolic politics as a tool of policymakers: a case of Poland *with V. Charnysh* [Draft available upon request]
