@@ -18,7 +18,7 @@ params:
     googleAnalyticsID: 
     DateFormat: "January 2006"
     defaultTheme: light
-    hideFooter: false
+    hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
     math: true
