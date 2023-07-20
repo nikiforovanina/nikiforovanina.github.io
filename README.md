@@ -15,5 +15,5 @@ I also have Twitter, but hardly post:
 To keep in touch, send me a message to:
 + [Mail](mailto:nina.nikiforova@phd.unibocconi.it)
 
-I also love xc skiing, running and swimming. I also have a funny instagram account about things' life - check [it](https://www.instagram.com/thi.ngslife/) out.
+I also love xc skiing, running and swimming and have a funny instagram account about things' life - check [it](https://www.instagram.com/thi.ngslife/) out.
 
