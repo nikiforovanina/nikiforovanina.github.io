@@ -1,8 +1,4 @@
-title: "about me"
-date: 2023-05-10T16:53:59-04:00
-draft: false
-showToc: false
-summary: "Information about me."
+about me
 ---
 
 Hey,  I'm a second year PhD Econ student at Bocconi Univerisity. 
