@@ -13,7 +13,7 @@ taxonomies:
     tag: tags 
 
 params:
-    description: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and in interested in political economy. 
+    description: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and interested in political economy. 
     author: Nina Nikiforova
     googleAnalyticsID: 
     DateFormat: "January 2006"
@@ -25,7 +25,7 @@ params:
     profileMode:
           enabled: true
           title: Nina Nikiforova
-          subtitle: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and in interested in political economy. 
+          subtitle: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and interested in political economy. 
           imageUrl: "/IMAGE.jpg"
           imageWidth: 150
           imageHeight: 150
@@ -33,10 +33,10 @@ params:
           buttons:
             - name: about
               url: /about/
-            - name: Courses
-              url: /courses/
-            - name: Design
-              url: /design/
+            - name: research
+              url: /research/
+            - name: contact
+              url: /contact/
               
     socialIcons:
         - name: CV
