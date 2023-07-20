@@ -31,8 +31,8 @@ params:
           imageHeight: 150
           imageTitle: 
           buttons:
-            - name: Papers
-              url: /papers/
+            - name: about
+              url: /about/
             - name: Courses
               url: /courses/
             - name: Design
