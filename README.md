@@ -1,6 +1,6 @@
 # Nikiforova Nina
 
-<img src="IMAGE.jpg" alt="drawing" width="200"/>
+<img src="IMAGE2.jpg" alt="drawing" width="240"/>
 
 Hey,  I'm a second year PhD Econ student at Bocconi Univerisity. 
 
