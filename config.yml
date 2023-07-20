@@ -1,7 +1,7 @@
 baseURL: "https://ninanikiforova.org/" 
 title: Nina Nikiforova
 paginate: 20
-theme: hugo-PaperMod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
