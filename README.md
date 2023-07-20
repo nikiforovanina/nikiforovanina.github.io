@@ -4,4 +4,4 @@ Hey,  I'm a second year PhD Econ student at Bocconi Univerisity. I am interested
 
 
 + [Twitter](https://twitter.com/nikiforovannina) 
-+ [Mailto](mailto:nina.nikiforova@phd.unibocconi.it) 
++ [Mail](mailto:nina.nikiforova@phd.unibocconi.it) 
