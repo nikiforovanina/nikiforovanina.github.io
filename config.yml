@@ -49,3 +49,17 @@ params:
       text: "Nina Nikiforova"
       icon: "/apple-touch-icon.png"
       iconHeight: 18
+
+
+      markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: xcode
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
+
