@@ -3,7 +3,7 @@ about me
 
 Hey,  I'm a second year PhD Econ student at Bocconi Univerisity. 
 
-I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, voting, collective memory and others. I am fascinated by the countries of Eastern Europe and Russia and working on projects about them.  
+I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, voting, collective memory and others. In my research I am mostly focusing on the countries of Eastern Europe and Russia.  
 
 Before starting my PhD I earned MA in Economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy. 
 
