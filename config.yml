@@ -30,7 +30,14 @@ params:
           imageWidth: 150
           imageHeight: 150
           imageTitle: 
-        
+          buttons:
+            - name: Papers
+              url: /papers/
+            - name: Courses
+              url: /courses/
+            - name: Design
+              url: /design/
+              
     socialIcons:
         - name: CV
           url: "/cv.pdf"
