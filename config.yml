@@ -55,8 +55,18 @@ params:
     label:
       text: "Nina Nikiforova"
       icon: "/apple-touch-icon.png"
-      iconHeight: 18
+      iconHeight: 35
 
+    menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 4
 
       markup:
     goldmark:
