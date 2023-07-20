@@ -12,7 +12,6 @@ social:
 taxonomies:
     tag: tags 
 
-
 params:
     description: Hey! I'm a second year PhD Econ student at Bocconi Univerisity. I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, collective memory and others. Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
     author: Nina Nikiforova
@@ -22,17 +21,6 @@ params:
     hideFooter: false
     disableThemeToggle: true
     ShowShareButtons: false
-    ShowReadingTime: false
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowToc: false
-    disableScrollToTop: true
-    TocOpen: true
-    ShowWordCount: false
-    UseHugoToc: true
-    comments: false
     math: true
     profileMode:
           enabled: true
@@ -61,15 +49,3 @@ params:
       text: "Nina Nikiforova"
       icon: "/apple-touch-icon.png"
       iconHeight: 18
-
-markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: xcode
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
