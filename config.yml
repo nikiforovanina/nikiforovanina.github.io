@@ -27,8 +27,8 @@ params:
           title: Nina Nikiforova
           subtitle: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and interested in political economy. 
           imageUrl: "/IMAGE.jpg"
-          imageWidth: 150
-          imageHeight: 150
+          imageWidth: 160
+          imageHeight: 160
           imageTitle: 
           buttons:
             - name: about
