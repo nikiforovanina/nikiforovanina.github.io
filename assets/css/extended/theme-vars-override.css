@@ -2,6 +2,7 @@
     --theme: #fff;
     --entry: #cfcfff;
     --primary: rgba(0, 0, 106, 0.88);
+    --background-color:rgba(245, 245, 245, 0.88) !important ;
     --secondary: rgba(0, 0, 80, 0.78);
     --tertiary: rgba(0, 0, 106, 0.16);
     --content: rgba(0, 0, 60, 0.88);
