@@ -3,8 +3,6 @@
     --entry: #cfcfff;
     --background-color:rgba(245, 245, 245, 0.88) !important ;
     --hljs-bg: #1c1d21;
-    --code-bg: #f5f5f5;
-    --border: #eee;
 }
 
 .dark {
@@ -16,5 +14,4 @@
     --content: rgba(235, 235, 255, 0.82);
     --hljs-bg: #2e2e33;
     --code-bg: #37383e;
-    --border: #446;
 }
