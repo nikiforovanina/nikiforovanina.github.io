@@ -8,7 +8,7 @@ I am interested in topics spanning the literature of political economy and polit
 Before starting my PhD I earned MA in Economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy. 
 
 Check my CV here:
-+ [CV]("/cv.pdf")
++ [CV](/cv.pdf)
 
 I also have Twitter, but hardly post: 
 + [Twitter](https://twitter.com/nikiforovannina)
