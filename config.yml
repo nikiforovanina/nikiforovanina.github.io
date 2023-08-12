@@ -28,7 +28,7 @@ params:
           subtitle: Welcome! I'm a second year PhD Econ student at Bocconi Univerisity and interested in political economy. 
           imageUrl: "/IMAGE2.jpg"
           #imageWidth: 160
-          imageHeight: 250
+          imageHeight: 200
           imageTitle: 
           buttons:
             - name: about
