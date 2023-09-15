@@ -1,7 +1,7 @@
 about me
 ---
 
-Hey,  I'm a second year PhD Econ student at Bocconi Univerisity. 
+Hey,  I'm a third year PhD Econ student at Bocconi Univerisity. 
 
 I am interested in topics spanning the literature of political economy and political science, such as authoritarianism, collective actions problems, voting, collective memory and others. In my research I am mostly focusing on the countries of Eastern Europe and Russia.  
 
@@ -16,4 +16,4 @@ I also have Twitter, but hardly post:
 To keep in touch, send me a message to:
 + [Mail](mailto:nina.nikiforova@phd.unibocconi.it)
 
-I used to do xc skiing, and do lots of running and swimming. I also have a funny instagram account about things' life - check [it](https://www.instagram.com/thi.ngslife/) out.
+I love xc skiing, and do lots of running and swimming. I also have a funny instagram account about things' life - check [it](https://www.instagram.com/thi.ngslife/) out.
