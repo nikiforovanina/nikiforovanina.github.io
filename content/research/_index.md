@@ -1,9 +1,7 @@
 Work in progress
 ---
 
-1. On strategic logic of personal repressions in autocracies [Draft available upon request]
-
-      >*Why and when do autocracies allow opposition leaders to have a say in politics? We introduce prominence as a characteristic that might affect strategic repressive decisions. We first analyse the data on political prisoners from Russia and demonstrate a gradually increasing trend in prominence of repressed opposition figures. We hypothesise that this result is driven by fear of backlash that targeted personal repressions of prominent individuals might provoke. This fear under some conditions might prevent a politician from immediately repressing opposition leaders and shapes his strategy of gradually tightening repressions over time. The main constraint a leader faces is keeping the populace ignorant of repressiveness of the regime. We formalise this argument with formal modelling, discuss implications of the model and its fit to the context of Russia and other countries (Belarus, Hungary).*
+1. On strategic logic of personal repressions in autocracies
 
    
 2. How voters respond to top-down symbolic politics: the renaming of streets in Poland  *with V. Charnysh* [Draft available upon request]
