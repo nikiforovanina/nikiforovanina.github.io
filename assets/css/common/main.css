@@ -63,7 +63,7 @@ pre {
     position: absolute;
     top: 4px;
     right: 4px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.4);
     background: white;
     border-radius: var(--radius);
     padding: 0 5px;
