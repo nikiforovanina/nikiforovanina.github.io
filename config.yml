@@ -44,8 +44,6 @@ params:
           imageHeight: 200
           imageTitle: 
           buttons:
-            - name: about
-              url: /about/
             - name: research
               url: /research/
             - name: contact
