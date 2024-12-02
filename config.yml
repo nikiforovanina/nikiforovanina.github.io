@@ -51,14 +51,6 @@ params:
             - name: contact
               url: /contact/
               
-    socialIcons:
-        - name: CV
-          url: "/cv.pdf"
-        - name: Email
-          url: "mailto:nina.nikiforova@phd.unibocconi.it"
-        - name: Twitter
-          url: "https://twitter.com/nikiforovannina"
-
     assets:
         disableHLJS: true
         disableScrollBarStyle: true
