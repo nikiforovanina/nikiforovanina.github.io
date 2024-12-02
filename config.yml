@@ -13,9 +13,7 @@ taxonomies:
     tag: tags 
 
 params:
-    description: |
-        Hi!  
-        I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
+    description: "Hi! I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization." 
     subtitle: | 
     author: Nina Nikiforova 
     author: Nina Nikiforova
