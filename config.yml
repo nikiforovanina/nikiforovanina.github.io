@@ -16,9 +16,10 @@ params:
     description: |
         Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. 
         My research interests lie in the fields of political economy and applied industrial organization.  
-        You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
-        <br>      <br>  
+        <br style="margin-bottom: 20px;"> 
         My CV is [here](cv.pdf).    
+        <br style="margin-bottom: 20px;"> 
+        You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
     author: Nina Nikiforova
     author: Nina Nikiforova
     googleAnalyticsID: 
@@ -34,9 +35,10 @@ params:
           subtitle: |
             Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. 
             My research interests lie in the fields of political economy and applied industrial organization.  
+            <br style="margin-bottom: 20px;"> 
+            My CV is [here](cv.pdf).    
+            <br style="margin-bottom: 20px;"> 
             You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
-            <br>      <br>  
-            My CV is [here](cv.pdf). 
           author: Nina Nikiforova 
           imageUrl: "/IMAGE2.jpg"
           #imageWidth: 160
