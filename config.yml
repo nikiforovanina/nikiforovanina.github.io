@@ -14,7 +14,7 @@ taxonomies:
 
 params:
     description: |
-        Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
+        Hi! I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
         You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
         <br style="margin-bottom: 20px;">
          
@@ -32,7 +32,7 @@ params:
           enabled: true
           title: Nina Nikiforova
           subtitle: | 
-              Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
+              Hi! I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
               You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
               <br style="margin-bottom: 20px;">
              
