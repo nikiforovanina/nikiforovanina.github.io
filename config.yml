@@ -16,7 +16,7 @@ params:
     description: |
         Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
         You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
-        <div style="margin-top: 20px;"></div>
+         <br><br><br>
         My CV is [here](cv.pdf).    
     author: Nina Nikiforova
     author: Nina Nikiforova
@@ -33,7 +33,7 @@ params:
           subtitle: | 
               Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
               You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
-              <div style="margin-top: 20px;"></div>
+               <br><br><br>
               My CV is [here](cv.pdf).    
           author: Nina Nikiforova 
           imageUrl: "/IMAGE2.jpg"
