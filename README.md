@@ -2,9 +2,9 @@
 
 <img src="IMAGE2.jpg" alt="drawing" width="240"/>
 
-Hey, thanks for a visit! I'm a third year PhD student in Economics at Bocconi Univerisity. 
+Hi! I'm a fourth year PhD student in Economics at Bocconi Univerisity. 
 
-I am interested in topics spanning the literature of political economy and public economics, as well as in IO estimation techniques. In my research I explore patterns of behaviour of agents in different settings ranging from voting in elections to choosing a college. Before starting my PhD I earned MA in economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy.
+Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
 
 Check my CV here:
 + [CV](/cv.pdf)
