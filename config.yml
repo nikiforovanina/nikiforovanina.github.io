@@ -40,7 +40,7 @@ params:
           author: Nina Nikiforova 
           imageUrl: "/IMAGE4.jpg"
           #imageWidth: 160
-          imageHeight: 200
+          imageHeight: 190
           imageTitle: 
           buttons:
             - name: research
