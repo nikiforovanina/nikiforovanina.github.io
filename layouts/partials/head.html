@@ -21,7 +21,7 @@
 
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
-<meta name="description" content="{{ .Params.description | default .Summary | default .Title }}">
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- with site.Params.description }}{{ . }}{{- end }}{{- end }}">
 
 {{- /* Styles */}}
 
