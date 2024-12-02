@@ -1,12 +1,8 @@
 Work in progress
 ---
 
-1. On strategic logic of personal repressions in autocracies
+1. "How do voters make their party choices? The role of anti-establishment appeal in the
+recent rise of populism" [Draft available upon request]
 
    
-2. How voters respond to top-down symbolic politics: the renaming of streets in Poland  *with V. Charnysh* [Draft available upon request]
-
-      >*Parties in power frequently seek to impose the official historical narrative on public spaces. We focus on the 2016 decommunization law in Poland to understand the political effects of top-down de-commemoration efforts. The law stipulated that street names deemed communist be renamed within twelve months, or else receive an alternative name from the government-appointed voivodes. We compiled an original geocoded dataset of all street name changes recorded in 2016-2018, linking them to electoral results in polling stations and municipalities. Using a difference-in-differences approach, we show that in the 2019 parliamentary election the ruling Law and Justice party (PiS), which championed the law, lost votes in the affected municipalities while the opposition parties secured significant gains. The renaming of streets also increased the number of spoiled ballots, reflecting political protest, and diminished turnout. The effects of decommunization policy decline with distance to the renamed streets and are strongest within a 4-km radius. To square this result with the ruling party’s 2019 electoral victory and a 11% increase in turnout at the country level, we examine heterogeneous effects of decommunization by the pre-treatment levels of PiS support. We find that in PiS strongholds, decommunization had a negligible effect on PiS voteshare and a positive effect on turnout. In places with low PiS support before the implementation of the law, turnout declined, protest vote increased, and PiS voteshare dropped. Thus, decommunization appears to have mobilized voters in PiS strongholds and demobilized voters in places that vote for other parties.*
-
-
-3. Cultural capital and the (intergenerational) persistence of higher education *with R. Aulagnon* [Draft available upon request]
+2. "Wasting your vote? ’None Of The Above’ ballot option" [Draft available upon request]
