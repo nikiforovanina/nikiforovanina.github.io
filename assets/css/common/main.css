@@ -75,3 +75,7 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+.large-gap {
+    margin-bottom: 20px;
+}
