@@ -41,7 +41,7 @@ params:
               _____
               My CV is **[HERE](cv.pdf)**
           author: Nina Nikiforova 
-          imageUrl: "/IMAGE2.jpg"
+          imageUrl: "/IMAGE4.jpg"
           #imageWidth: 160
           imageHeight: 200
           imageTitle: 
