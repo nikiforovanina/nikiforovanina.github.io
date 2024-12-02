@@ -14,15 +14,27 @@ taxonomies:
 
 params:
     description: "Hi! I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization." 
-    subtitle: | 
     author: Nina Nikiforova 
     author: Nina Nikiforova
-    googleAnalyticsID: 
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["papers","courses","design"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
     math: true
     profileMode:
           enabled: true
