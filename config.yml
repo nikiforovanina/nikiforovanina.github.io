@@ -26,7 +26,7 @@ params:
     profileMode:
           enabled: true
           title: Nina Nikiforova
-          subtitle: Hi! I'm a fourth year PhD Econ student at Bocconi Univerisity. My research interests lie in the fields of policitcal economy and applied industrial organization.
+          subtitle: Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. You can reach me at [nina.nikiforova@phd.unibocconi.it](mailto:nina.nikiforova@phd.unibocconi.it). My CV [here](cv.pdf). 
           imageUrl: "/IMAGE2.jpg"
           #imageWidth: 160
           imageHeight: 200
