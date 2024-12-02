@@ -1,7 +1,7 @@
 about me
 ---
 
-I'm a third year PhD student in Economics at Bocconi Univerisity. I am interested in topics spanning the literature of political economy and public economics, as well as in IO estimation techniques. In my research I explore patterns of behaviour of agents in different settings ranging from voting in elections to choosing a college. 
+I'm a fourth year PhD student in Economics at Bocconi Univerisity. I am interested in topics spanning the literature of political economy and public economics, as well as in IO estimation techniques.  
 
 Before starting my PhD I earned MA in Economics from New Economic School in Moscow and BSc and MSc in Geography from Moscow State Univerisy. 
 
@@ -14,4 +14,4 @@ I also have Twitter, but hardly post:
 To keep in touch, send me a message to:
 + [Mail](mailto:nina.nikiforova@phd.unibocconi.it)
 
-I love xc skiing, and do lots of running and swimming. I also have a funny instagram account about things' life - check [it](https://www.instagram.com/thi.ngslife/) out.
+Also I love xc-skiing!
