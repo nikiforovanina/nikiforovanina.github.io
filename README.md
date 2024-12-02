@@ -1,6 +1,6 @@
 # Nikiforova Nina
 
-<img src="IMAGE2.jpg" alt="drawing" width="240"/>
+<img src="IMAGE4.jpg" alt="drawing" width="240"/>
 
 Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. 
 
