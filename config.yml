@@ -18,7 +18,8 @@ params:
         My research interests lie in the fields of political economy and applied industrial organization.  
         You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
         <br><br>    
-        My CV is [here](cv.pdf).  
+        <br><br>    
+        My CV is <span style="color:blue;"><a href="cv.pdf">here</a></span>. 
     author: Nina Nikiforova
     author: Nina Nikiforova
     googleAnalyticsID: 
@@ -36,7 +37,7 @@ params:
             My research interests lie in the fields of political economy and applied industrial organization.  
             You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
             <br><br>  
-            My CV is [here](cv.pdf).    
+            My CV is <span style="color:blue;"><a href="cv.pdf">here</a></span>. 
           author: Nina Nikiforova 
           imageUrl: "/IMAGE2.jpg"
           #imageWidth: 160
