@@ -13,7 +13,12 @@ taxonomies:
     tag: tags 
 
 params:
-    description: Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization.  You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. My CV is <a href="/cv.pdf">here</a>.  
+    description: > 
+        Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. 
+        My research interests lie in the fields of political economy and applied industrial organization.  
+        You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
+        <br>  
+        My CV is <a href="cv.pdf">here</a>.  
     author: Nina Nikiforova
     author: Nina Nikiforova
     googleAnalyticsID: 
@@ -26,7 +31,12 @@ params:
     profileMode:
           enabled: true
           title: Nina Nikiforova
-          subtitle: Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization.  You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. My CV is <a href="/cv.pdf">here</a>.  
+          subtitle: > 
+            Hi! I'm a fourth-year PhD Econ student at Bocconi University. I'm a fourth-year PhD Econ student at Bocconi University. 
+            My research interests lie in the fields of political economy and applied industrial organization.  
+            You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>. 
+            <br>  
+            My CV is <a href="cv.pdf">here</a>.    
           author: Nina Nikiforova 
           imageUrl: "/IMAGE2.jpg"
           #imageWidth: 160
