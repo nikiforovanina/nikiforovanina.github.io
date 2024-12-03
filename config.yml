@@ -10,7 +10,7 @@ social:
     twitter: nikiforovannina
 
 taxonomies: 
-    tag: tags  
+    tag: tags   
 
 params:
     description: "Hi!" 
