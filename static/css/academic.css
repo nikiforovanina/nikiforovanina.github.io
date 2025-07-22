@@ -1,20 +1,30 @@
-/* Hide default profile mode elements we don't want */
+/* Hide ALL default profile mode elements */
 .profile_inner h1,
-.profile_inner .profile-subtitle {
-    display: none;
+.profile_inner .profile-subtitle,
+.profile_inner .profile-content,
+.profile_inner p {
+    display: none !important;
 }
 
-/* Main profile container - create two-column layout */
+/* Override PaperMod's default profile layout completely */
 .profile {
     padding: 60px 0;
 }
 
 .profile_inner {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 60px;
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: left !important;
+}
+
+/* Force the profile container to use flexbox */
+.profile .profile-container {
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 /* Left column - photo and contact info */
