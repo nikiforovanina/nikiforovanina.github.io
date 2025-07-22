@@ -1,13 +1,13 @@
-/* Custom profile layout with proper spacing */
+/* Custom profile layout with extra large spacing between image and text */
 
-/* Main profile container */
+/* Main profile container with increased horizontal spacing */
 .profile {
     display: flex;
     align-items: flex-start;
-    gap: 120px; /* Large gap between photo and text */
-    max-width: 1200px;
+    gap: 180px; /* Increased from 120px to 180px for much larger spacing */
+    max-width: 1400px; /* Increased max-width to accommodate larger spacing */
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 40px; /* Increased side padding */
 }
 
 /* Left side - photo and contact info */
@@ -68,10 +68,11 @@
     text-decoration: none;
 }
 
-/* Right side - content */
+/* Right side - content with extra space from image */
 .profile-right {
     flex: 1;
     min-width: 0;
+    padding-left: 20px; /* Additional padding to push text further from image */
 }
 
 .profile-description {
@@ -96,6 +97,7 @@
     border: 1px solid var(--border);
     border-radius: 8px;
     background: var(--theme);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .research-title {
@@ -117,18 +119,35 @@
     display: none;
 }
 
-/* Responsive design */
+/* Responsive design with adjusted breakpoints for larger spacing */
+@media (max-width: 1200px) {
+    .profile {
+        gap: 120px; /* Reduced gap for smaller screens */
+        max-width: 1200px;
+        padding: 60px 30px;
+    }
+    
+    .profile-right {
+        padding-left: 10px;
+    }
+}
+
 @media (max-width: 900px) {
     .profile {
         flex-direction: column;
         gap: 40px;
         text-align: center;
         padding: 40px 20px;
+        max-width: 800px;
     }
     
     .profile-left {
         align-self: center;
         width: auto;
+    }
+    
+    .profile-right {
+        padding-left: 0;
     }
     
     .profile_image {
@@ -147,5 +166,34 @@
     
     .research-section h2 {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+    
+    .profile_image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .research-item {
+        padding: 20px;
+    }
+}
+
+/* Extra large screens - even more spacing */
+@media (min-width: 1400px) {
+    .profile {
+        gap: 220px; /* Even larger gap for very wide screens */
+        max-width: 1600px;
+        padding: 60px 60px;
+    }
+    
+    .profile-right {
+        padding-left: 30px;
     }
 }
