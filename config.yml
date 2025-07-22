@@ -20,22 +20,17 @@ params:
   ShowToc: false
   
   profileMode:
-    enabled: true
-    title: ""  # Remove title from here, we'll add it in custom layout
-    subtitle: ""  # Remove subtitle, we'll restructure this
-    imageUrl: "/IMAGE4.jpg"
-    imageHeight: 20
-    buttons: []
+    enabled: false
   
-  # Custom params for the new layout
+  # Custom profile data
   customProfile:
     name: "Nina Nikiforova"
     email: "nina.nikiforova@phd.unibocconi.it"
     cvLink: "/cv.pdf"
     description: |
-      I'm a PhD student in Economics at Bocconi University.  
-      My research lies at the intersection of political economy and applied industrial organization.
-    
+      Hi! I'm a fourth-year PhD Econ student at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization.
+    imageUrl: "/IMAGE4.jpg"
+  
   assets:
     disableHLJS: true
     disableScrollBarStyle: true
