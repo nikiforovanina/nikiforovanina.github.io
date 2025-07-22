@@ -1,0 +1,66 @@
+{{- define "main" }}
+
+<!-- Top Navigation -->
+<nav class="main-nav">
+    <div class="nav-links">
+        {{- range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{- end }}
+    </div>
+</nav>
+
+<!-- Main Profile Section -->
+<main class="profile">
+    <!-- Left Side: Photo and Contact -->
+    <div class="profile-left">
+        {{- with .Site.Params.profileMode.imageUrl }}
+        <img src="{{ . | relURL }}" alt="{{ $.Site.Params.customProfile.name }}" class="profile_image">
+        {{- end }}
+        
+        <h1 class="profile-name">{{ .Site.Params.customProfile.name }}</h1>
+        
+        <div class="profile-email">
+            <a href="mailto:{{ .Site.Params.customProfile.email }}">{{ .Site.Params.customProfile.email }}</a>
+        </div>
+        
+        {{- with .Site.Params.customProfile.cvLink }}
+        <a href="{{ . }}" class="cv-link">📄 Download CV</a>
+        {{- end }}
+    </div>
+    
+    <!-- Right Side: Description and Content -->
+    <div class="profile-right">
+        <div class="profile-description">
+            {{ .Site.Params.customProfile.description | markdownify }}
+        </div>
+        
+        <!-- Research/Articles Section -->
+        <div class="research-section">
+            <h2>Research</h2>
+            
+            <!-- Placeholder research items -->
+            <div class="research-item">
+                <div class="research-title">Working Paper 1: Political Economy and Market Structure</div>
+                <div class="research-description">
+                    This paper examines the intersection of political economy and industrial organization, focusing on how political factors influence market competition and firm behavior.
+                </div>
+            </div>
+            
+            <div class="research-item">
+                <div class="research-title">Working Paper 2: Applied Industrial Organization in Political Markets</div>
+                <div class="research-description">
+                    An empirical analysis of how industrial organization principles apply to political markets, with implications for policy design and electoral competition.
+                </div>
+            </div>
+            
+            <div class="research-item">
+                <div class="research-title">Work in Progress: Economic Policy and Market Dynamics</div>
+                <div class="research-description">
+                    Investigating the dynamic relationship between economic policy changes and market structure evolution in regulated industries.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{{- end }}
