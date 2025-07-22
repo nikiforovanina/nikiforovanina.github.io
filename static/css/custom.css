@@ -4,24 +4,26 @@
 .profile {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 60px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 /* Left side - photo and contact info */
 .profile-left {
     flex-shrink: 0;
     text-align: center;
+    width: 240px;
 }
 
 .profile_image {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 8px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .profile-name {
@@ -54,14 +56,15 @@
 
 .profile-description {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 40px;
+    line-height: 1.7;
+    margin-bottom: 50px;
     color: var(--primary);
+    text-align: left;
 }
 
 /* Articles/Research section */
 .research-section {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .research-section h2 {
@@ -113,29 +116,7 @@
 
 /* Top navigation styling */
 .main-nav {
-    background: var(--theme);
-    border-bottom: 1px solid var(--border);
-    padding: 15px 0;
-    margin-bottom: 0;
-}
-
-.main-nav .nav-links {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.main-nav a {
-    font-weight: 500;
-    color: var(--primary);
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.main-nav a:hover {
-    background: var(--border);
+    display: none; /* Hide top navigation */
 }
 
 /* Responsive design */
@@ -148,11 +129,12 @@
     
     .profile-left {
         align-self: center;
+        width: auto;
     }
     
     .profile_image {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
     
     .profile-name {
