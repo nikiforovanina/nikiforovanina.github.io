@@ -14,7 +14,7 @@
 .profile-left {
     flex-shrink: 0;
     text-align: center;
-    width: 240px;
+    width: 200px;
 }
 
 .profile_image {
@@ -65,6 +65,7 @@
 /* Articles/Research section */
 .research-section {
     margin-top: 50px;
+    margin: 20px 20px  20px 20px;
 }
 
 .research-section h2 {
