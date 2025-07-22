@@ -20,15 +20,7 @@ params:
   ShowToc: false
   
   profileMode:
-    enabled: true
-    title: "Nina Nikiforova"
-    subtitle: "nina.nikiforova@phd.unibocconi.it"
-    imageUrl: "/IMAGE4.jpg"
-    imageHeight: 200
-    imageWidth: 200
-    buttons:
-      - name: "📄 Download CV"
-        url: "/cv.pdf"
+    enabled: false
   
   assets:
     disableHLJS: true
