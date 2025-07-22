@@ -25,13 +25,28 @@
 }
 
 /* Profile image styling */
-.profile .profile-image {
+.profile-image {
     width: 150px !important;
     height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
     border: 3px solid #f0f0f0;
+    display: block;
+}
+
+/* Override any PaperMod default image styling */
+.profile img,
+.profile .profile-image,
+.profile_inner img {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
 }
 
 /* Contact info under photo */
