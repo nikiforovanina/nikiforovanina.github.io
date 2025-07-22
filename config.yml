@@ -20,8 +20,22 @@ params:
   ShowToc: false
   
   profileMode:
-    enabled: false
+    enabled: true
+    title: ""  # Remove title from here, we'll add it in custom layout
+    subtitle: ""  # Remove subtitle, we'll restructure this
+    imageUrl: "/IMAGE4.jpg"
+    imageHeight: 20
+    buttons: []
   
+  # Custom params for the new layout
+  customProfile:
+    name: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    cvLink: "/cv.pdf"
+    description: |
+      I'm a PhD student in Economics at Bocconi University.  
+      My research lies at the intersection of political economy and applied industrial organization.
+    
   assets:
     disableHLJS: true
     disableScrollBarStyle: true
@@ -29,10 +43,18 @@ params:
   customCSS:
     - css/custom.css
 
+# Remove CV from top menu
+# menu:
+#   main:
+#     - name: CV
+#       url: /cv.pdf
+#       weight: 10
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+
 highlight:
   guessSyntax: true
   style: xcode
