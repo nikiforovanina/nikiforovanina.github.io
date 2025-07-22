@@ -21,7 +21,7 @@ params:
   
   # Disable default profile mode - we'll use custom layout
   profileMode:
-    enabled: false
+    enabled: false  # Fixed typo: removed the 'a'
   
   # Custom profile data
   customProfile:
@@ -30,13 +30,8 @@ params:
     cvLink: "/cv.pdf"
     imageUrl: "/IMAGE4.jpg"
     imageWidth: 200
-    imageHeight: 270
     shortDescription: "I am a fourth-year PhD student in Economics at Bocconi University."
-    description: |
-      My research interests lie in the fields of political economy and applied industrial organization.
-      |
-      |
-      
+    description: "My research interests lie in the fields of political economy and applied industrial organization."
     
     # Academic sections
     workingPapers:
@@ -44,11 +39,20 @@ params:
         coauthors: ""
         status: ""
         link: ""
-      - title: ""
-        coauthors: ""
-        status: ""
-        link: ""
+      # Add more papers by duplicating the structure above
     
+    # Optional: Add publications section
+    publications:
+      # - title: "Your Published Paper Title"
+      #   coauthors: "Co-author Name"
+      #   journal: "Journal Name, Vol. X, Year"
+      #   link: "https://link-to-paper.com"
+    
+    # Optional: Add work in progress section  
+    worksInProgress:
+      # - title: "Your Work in Progress Title"
+      #   coauthors: "Co-author Name"
+      #   status: "Draft available upon request"
   
   assets:
     favicon: "/apple-touch-icon.png"
@@ -65,6 +69,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
 highlight:
   guessSyntax: true
   style: github
