@@ -19,9 +19,16 @@ params:
   disableSpecial1stPost: true
   ShowToc: false
   
-  # Disable profileMode to use custom layout
   profileMode:
-    enabled: false
+    enabled: true
+    title: "Nina Nikiforova"
+    subtitle: "nina.nikiforova@phd.unibocconi.it"
+    imageUrl: "/IMAGE4.jpg"
+    imageHeight: 200
+    imageWidth: 200
+    buttons:
+      - name: "📄 Download CV"
+        url: "/cv.pdf"
   
   assets:
     disableHLJS: true
