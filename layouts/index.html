@@ -1,46 +1,78 @@
 {{- define "main" }}
-<div class="profile">
-    <!-- Left side - photo and contact info -->
-    <div class="profile-left">
-        <img src="{{ .Site.Params.customProfile.imageUrl }}" 
-             alt="{{ .Site.Params.customProfile.name }}" 
-             class="profile_image"
-             width="{{ .Site.Params.customProfile.imageWidth }}"
-             height="{{ .Site.Params.customProfile.imageHeight }}">
-        
-        <h1 class="profile-name">{{ .Site.Params.customProfile.name }}</h1>
-        
-        <div class="profile-email">
-            <a href="mailto:{{ .Site.Params.customProfile.email }}">{{ .Site.Params.customProfile.email }}</a>
+<div class="academic-container">
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <div class="profile-photo">
+            <img src="{{ .Site.Params.customProfile.imageUrl }}" 
+                 alt="{{ .Site.Params.customProfile.name }}" 
+                 width="{{ .Site.Params.customProfile.imageWidth }}"
+                 height="{{ .Site.Params.customProfile.imageHeight }}">
         </div>
         
-        <a href="{{ .Site.Params.customProfile.cvLink }}" class="cv-link" target="_blank" rel="noopener">
-            📄 Download CV
-        </a>
+        <div class="profile-info">
+            <h1 class="name">{{ .Site.Params.customProfile.name }}</h1>
+            
+            <div class="intro">
+                {{ .Site.Params.customProfile.shortDescription }}
+            </div>
+            
+            <div class="research-interests">
+                {{ .Site.Params.customProfile.description | markdownify }}
+            </div>
+            
+            <div class="contact-links">
+                <a href="mailto:{{ .Site.Params.customProfile.email }}" class="contact-link">
+                    {{ .Site.Params.customProfile.email }}
+                </a>
+                <a href="{{ .Site.Params.customProfile.cvLink }}" class="cv-link" target="_blank">
+                    CV
+                </a>
+            </div>
+        </div>
     </div>
     
-    <!-- Right side - description and research -->
-    <div class="profile-right">
-        <div class="profile-description">
-            {{ .Site.Params.customProfile.description | markdownify }}
+    <!-- Working Papers Section -->
+    {{- if .Site.Params.customProfile.workingPapers }}
+    <div class="papers-section">
+        <h2>Working Papers</h2>
+        {{- range .Site.Params.customProfile.workingPapers }}
+        <div class="paper-item">
+            {{- if .link }}
+            <a href="{{ .link }}" class="paper-title" target="_blank">{{ .title }}</a>
+            {{- else }}
+            <span class="paper-title">{{ .title }}</span>
+            {{- end }}
+            {{- if .coauthors }}
+            <span class="coauthors">{{ .coauthors }}</span>
+            {{- end }}
+            {{- if .status }}
+            <div class="paper-status">{{ .status }}</div>
+            {{- end }}
         </div>
-        
-        <!-- Research section (you can customize this) -->
-        <div class="research-section">
-            <h2>Research Interests</h2>
-            <div class="research-item">
-                <div class="research-title">Political Economy</div>
-                <div class="research-description">
-                    Investigating the intersection of political institutions and economic outcomes, with focus on policy formation and implementation.
-                </div>
-            </div>
-            <div class="research-item">
-                <div class="research-title">Applied Industrial Organization</div>
-                <div class="research-description">
-                    Analyzing market structures, firm behavior, and competition policy using empirical methods and theoretical frameworks.
-                </div>
-            </div>
-        </div>
+        {{- end }}
     </div>
+    {{- end }}
+    
+    <!-- Publications Section -->
+    {{- if .Site.Params.customProfile.publications }}
+    <div class="papers-section">
+        <h2>Publications</h2>
+        {{- range .Site.Params.customProfile.publications }}
+        <div class="paper-item">
+            {{- if .link }}
+            <a href="{{ .link }}" class="paper-title" target="_blank">{{ .title }}</a>
+            {{- else }}
+            <span class="paper-title">{{ .title }}</span>
+            {{- end }}
+            {{- if .coauthors }}
+            <span class="coauthors">{{ .coauthors }}</span>
+            {{- end }}
+            {{- if .journal }}
+            <div class="paper-journal">{{ .journal }}{{- if .year }}, {{ .year }}{{ end }}</div>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end }}
 </div>
 {{- end }}
