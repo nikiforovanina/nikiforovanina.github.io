@@ -1,23 +1,15 @@
 {{- define "main" }}
 <div class="academic-container">
     <div class="profile-section">
-        <div class="profile-photo">
-            <img src="{{ .Site.Params.customProfile.imageUrl }}" alt="{{ .Site.Params.customProfile.name }}">
-        </div>
-        
-        <div class="profile-info">
-            <h1 class="name">{{ .Site.Params.customProfile.name }}</h1>
-            
-            <div class="intro">
-                {{ .Site.Params.customProfile.shortDescription }}
+        <!-- Left column: Photo and contact info -->
+        <div class="profile-photo-column">
+            <div class="profile-photo">
+                <img src="{{ .Site.Params.customProfile.imageUrl }}" alt="{{ .Site.Params.customProfile.name }}">
             </div>
             
-            <div class="research-interests">
-                <p>{{ .Site.Params.customProfile.description | markdownify }}</p>
-            </div>
-            
-            <div class="contact-links">
-                <a href="mailto:{{ .Site.Params.customProfile.email }}" class="contact-link">
+            <div class="contact-info">
+                <div class="contact-name">{{ .Site.Params.customProfile.name }}</div>
+                <a href="mailto:{{ .Site.Params.customProfile.email }}" class="contact-email">
                     {{ .Site.Params.customProfile.email }}
                 </a>
                 {{- if .Site.Params.customProfile.cvLink }}
@@ -25,71 +17,82 @@
                 {{- end }}
             </div>
         </div>
-    </div>
-    
-    {{- if .Site.Params.customProfile.workingPapers }}
-    <div class="papers-section">
-        <h2>Working Papers</h2>
-        {{- range .Site.Params.customProfile.workingPapers }}
-        {{- if .title }}
-        <div class="paper-item">
-            {{- if .link }}
-            <a href="{{ .link }}" class="paper-title">{{ .title }}</a>
-            {{- else }}
-            <span class="paper-title">{{ .title }}</span>
+        
+        <!-- Right column: Main content -->
+        <div class="profile-content">
+            <div class="intro">
+                {{ .Site.Params.customProfile.shortDescription }}
+            </div>
+            
+            <div class="research-interests">
+                {{ .Site.Params.customProfile.description | markdownify }}
+            </div>
+            
+            {{- if .Site.Params.customProfile.workingPapers }}
+            <div class="papers-section">
+                <h2>Working Papers</h2>
+                {{- range .Site.Params.customProfile.workingPapers }}
+                {{- if .title }}
+                <div class="paper-item">
+                    {{- if .link }}
+                    <a href="{{ .link }}" class="paper-title">{{ .title }}</a>
+                    {{- else }}
+                    <span class="paper-title">{{ .title }}</span>
+                    {{- end }}
+                    {{- if .coauthors }}
+                    <span class="coauthors">(with {{ .coauthors }})</span>
+                    {{- end }}
+                    {{- if .status }}
+                    <div class="paper-status">{{ .status }}</div>
+                    {{- end }}
+                </div>
+                {{- end }}
+                {{- end }}
+            </div>
             {{- end }}
-            {{- if .coauthors }}
-            <span class="coauthors">(with {{ .coauthors }})</span>
+            
+            {{- if .Site.Params.customProfile.publications }}
+            <div class="papers-section">
+                <h2>Publications</h2>
+                {{- range .Site.Params.customProfile.publications }}
+                {{- if .title }}
+                <div class="paper-item">
+                    {{- if .link }}
+                    <a href="{{ .link }}" class="paper-title">{{ .title }}</a>
+                    {{- else }}
+                    <span class="paper-title">{{ .title }}</span>
+                    {{- end }}
+                    {{- if .coauthors }}
+                    <span class="coauthors">(with {{ .coauthors }})</span>
+                    {{- end }}
+                    {{- if .journal }}
+                    <div class="paper-journal">{{ .journal }}</div>
+                    {{- end }}
+                </div>
+                {{- end }}
+                {{- end }}
+            </div>
             {{- end }}
-            {{- if .status }}
-            <div class="paper-status">{{ .status }}</div>
+            
+            {{- if .Site.Params.customProfile.worksInProgress }}
+            <div class="papers-section">
+                <h2>Work in Progress</h2>
+                {{- range .Site.Params.customProfile.worksInProgress }}
+                {{- if .title }}
+                <div class="paper-item">
+                    <span class="paper-title">{{ .title }}</span>
+                    {{- if .coauthors }}
+                    <span class="coauthors">(with {{ .coauthors }})</span>
+                    {{- end }}
+                    {{- if .status }}
+                    <div class="paper-status">{{ .status }}</div>
+                    {{- end }}
+                </div>
+                {{- end }}
+                {{- end }}
+            </div>
             {{- end }}
         </div>
-        {{- end }}
-        {{- end }}
     </div>
-    {{- end }}
-    
-    {{- if .Site.Params.customProfile.publications }}
-    <div class="papers-section">
-        <h2>Publications</h2>
-        {{- range .Site.Params.customProfile.publications }}
-        {{- if .title }}
-        <div class="paper-item">
-            {{- if .link }}
-            <a href="{{ .link }}" class="paper-title">{{ .title }}</a>
-            {{- else }}
-            <span class="paper-title">{{ .title }}</span>
-            {{- end }}
-            {{- if .coauthors }}
-            <span class="coauthors">(with {{ .coauthors }})</span>
-            {{- end }}
-            {{- if .journal }}
-            <div class="paper-journal">{{ .journal }}</div>
-            {{- end }}
-        </div>
-        {{- end }}
-        {{- end }}
-    </div>
-    {{- end }}
-    
-    {{- if .Site.Params.customProfile.worksInProgress }}
-    <div class="papers-section">
-        <h2>Work in Progress</h2>
-        {{- range .Site.Params.customProfile.worksInProgress }}
-        {{- if .title }}
-        <div class="paper-item">
-            <span class="paper-title">{{ .title }}</span>
-            {{- if .coauthors }}
-            <span class="coauthors">(with {{ .coauthors }})</span>
-            {{- end }}
-            {{- if .status }}
-            <div class="paper-status">{{ .status }}</div>
-            {{- end }}
-        </div>
-        {{- end }}
-        {{- end }}
-    </div>
-    {{- end }}
 </div>
 {{- end }}
