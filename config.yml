@@ -21,7 +21,7 @@ params:
   
   # Disable default profile mode - we'll use custom layout
   profileMode:
-    enabled: false  # Fixed typo: removed the 'a'
+    enabled: false 
   
   # Custom profile data
   customProfile:
@@ -29,6 +29,8 @@ params:
     email: "nina.nikiforova@phd.unibocconi.it"
     cvLink: "/cv.pdf"
     imageUrl: "/IMAGE4.jpg"
+    imageWidth: 150
+    imageHeight: 150 
 
     shortDescription: "I am a fourth-year PhD student in Economics at Bocconi University."
     description: "My research interests lie in the fields of political economy and applied industrial organization."
