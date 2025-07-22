@@ -1,11 +1,13 @@
+/* Custom layout similar to annarusso.github.io */
+
 /* Main profile container */
 .profile {
-    display: flex;
-    align-items: flex-start;
-    gap: 120px; /* Increased from 60px to 120px */
-    max-width: 1200px; /* Increased to accommodate larger gap */
-    margin: 0 auto;
-    padding: 60px 20px;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 120px !important; /* Increased from 60px to 120px */
+    max-width: 1200px !important; /* Increased to accommodate larger gap */
+    margin: 0 auto !important;
+    padding: 60px 20px !important;
 }
 
 /* Left side - photo and contact info */
