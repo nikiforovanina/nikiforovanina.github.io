@@ -1,11 +1,9 @@
-/* Custom layout similar to annarusso.github.io */
-
 /* Main profile container */
 .profile {
     display: flex;
     align-items: flex-start;
-    gap: 60px;
-    max-width: 1000px;
+    gap: 120px; /* Increased from 60px to 120px */
+    max-width: 1200px; /* Increased to accommodate larger gap */
     margin: 0 auto;
     padding: 60px 20px;
 }
@@ -65,7 +63,7 @@
 /* Articles/Research section */
 .research-section {
     margin-top: 50px;
-    margin: 20px 20px  20px 20px;
+    margin: 20px 20px 20px 20px;
 }
 
 .research-section h2 {
