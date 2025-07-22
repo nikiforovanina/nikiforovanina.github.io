@@ -1,7 +1,6 @@
 baseURL: "https://ninanikiforova.org/"
 title: Nina Nikiforova
 theme: PaperMod
-
 paginate: 20
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -19,25 +18,37 @@ params:
   disableScrollToTop: true
   disableSpecial1stPost: true
   ShowToc: false
+  
   profileMode:
     enabled: true
-    title: Nina Nikiforova
-    subtitle: |
-      I'm a PhD student in Economics at Bocconi University.  
-      My research lies at the intersection of political economy and applied industrial organization.  
-      <br><br>
-      📄 <a href="/cv.pdf"><strong>CV</strong></a>  
-      📬 <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>
+    title: ""  # Remove title from here, we'll add it in custom layout
+    subtitle: ""  # Remove subtitle, we'll restructure this
     imageUrl: "/IMAGE4.jpg"
-    imageHeight: 180
+    imageHeight: 200
     buttons: []
-
+  
+  # Custom params for the new layout
+  customProfile:
+    name: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    cvLink: "/cv.pdf"
+    description: |
+      I'm a PhD student in Economics at Bocconi University.  
+      My research lies at the intersection of political economy and applied industrial organization.
+    
   assets:
     disableHLJS: true
     disableScrollBarStyle: true
-
+  
   customCSS:
     - css/custom.css
+
+# Add menu for CV at top
+menu:
+  main:
+    - name: CV
+      url: /cv.pdf
+      weight: 10
 
 markup:
   goldmark:
