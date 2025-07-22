@@ -3,6 +3,7 @@ title: ""
 layout: "home"
 ---
 
+{{< rawhtml >}}
 <div class="profile">
   <div class="profile-left">
     <img src="/IMAGE4.jpg" alt="Nina Nikiforova" class="profile_image">
@@ -45,3 +46,4 @@ layout: "home"
     </div>
   </div>
 </div>
+{{< /rawhtml >}}
