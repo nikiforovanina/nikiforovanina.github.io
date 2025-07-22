@@ -24,7 +24,7 @@ params:
     title: ""  # Remove title from here, we'll add it in custom layout
     subtitle: ""  # Remove subtitle, we'll restructure this
     imageUrl: "/IMAGE4.jpg"
-    imageHeight: 200
+    imageHeight: 20
     buttons: []
   
   # Custom params for the new layout
