@@ -50,14 +50,14 @@ params:
       # Add more papers by duplicating the structure above
     
     # Publications section
-    publications:
+   # publications:
       # - title: "Your Published Paper Title"
       #   coauthors: "Co-author Name"
       #   journal: "Journal Name, Vol. X, Year"
       #   link: "https://link-to-paper.com"
     
     # Work in progress section  
-    worksInProgress:
+  #  worksInProgress:
       # - title: "Your Work in Progress Title"
       #   coauthors: "Co-author Name"
       #   status: "Draft available upon request"
