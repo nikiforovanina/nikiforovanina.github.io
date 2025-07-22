@@ -1,0 +1,171 @@
+/* Custom layout similar to annarusso.github.io */
+
+/* Main profile container */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Left side - photo and contact info */
+.profile-left {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.profile_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: var(--primary);
+}
+
+.profile-email {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.profile-email a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.profile-email a:hover {
+    text-decoration: underline;
+}
+
+/* Right side - content */
+.profile-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+/* Articles/Research section */
+.research-section {
+    margin-top: 40px;
+}
+
+.research-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.research-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--theme);
+}
+
+.research-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.research-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+/* CV link styling */
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: var(--primary);
+    color: var(--theme) !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: opacity 0.2s;
+}
+
+.cv-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Top navigation styling */
+.main-nav {
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.main-nav .nav-links {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav a {
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+    background: var(--border);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .profile-left {
+        align-self: center;
+    }
+    
+    .profile_image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-name {
+        font-size: 22px;
+    }
+    
+    .profile-description {
+        font-size: 16px;
+    }
+}
+
+/* Hide default PaperMod profile elements */
+.profile .profile_inner h1,
+.profile .profile_inner .profile_info {
+    display: none;
+}
