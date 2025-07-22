@@ -1,81 +1,49 @@
-baseURL: "https://ninanikiforova.org/" 
+baseURL: "https://ninanikiforova.org/"
 title: Nina Nikiforova
-paginate: 20
 theme: PaperMod
 
+paginate: 20
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
-social:
-    twitter: nikiforovannina
-
-taxonomies: 
-    tag: tags   
-
 params:
-    description: "Hi!" 
-    author: Nina Nikiforova 
-    author: Nina Nikiforova
-    DateFormat: "January 2006"
-    defaultTheme: light
-    hideFooter: true
-    disableThemeToggle: true
-    ShowShareButtons: false
-    ShowReadingTime: false
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    ShowAllPagesInArchive: false
-    MainSections: ["papers","courses","design"]
-    ShowToc: false
-    disableScrollToTop: true
-    TocOpen: true
-    ShowWordCount: false
-    UseHugoToc: true
-    comments: false
-    math: true
-    profileMode:
-          enabled: true
-          title: Nina Nikiforova
-          subtitle: | 
-              Hi!
-              I'm a fourth-year PhD student in Economics at Bocconi University. My research interests lie in the fields of political economy and applied industrial organization. You can reach me at <a href="mailto:nina.nikiforova@phd.unibocconi.it">**nina.nikiforova@phd.unibocconi.it**</a>
-      
-              _____
-              My CV is **[HERE](cv.pdf)**
-          author: Nina Nikiforova 
-          imageUrl: "/IMAGE4.jpg"
-          #imageWidth: 160
-          imageHeight: 190
-          imageTitle: 
-          buttons:
-            - name: research
-              url: /research/
-            - name: contact
-              url: /contact/
-              
-    assets:
-        disableHLJS: true
-        disableScrollBarStyle: true
-    cover:
-        hiddenInList: true
-        hiddenInSingle: true
-    label:
-      text: "Nina Nikiforova"
-      icon: "/apple-touch-icon.png"
-      iconHeight: 35
-      
-      markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: xcode
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
+  description: "PhD Student in Economics at Bocconi University"
+  author: Nina Nikiforova
+  defaultTheme: light
+  disableThemeToggle: true
+  hideFooter: true
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableScrollToTop: true
+  disableSpecial1stPost: true
+  ShowToc: false
+  profileMode:
+    enabled: true
+    title: Nina Nikiforova
+    subtitle: |
+      I'm a PhD student in Economics at Bocconi University.  
+      My research lies at the intersection of political economy and applied industrial organization.  
+      <br><br>
+      📄 <a href="/cv.pdf"><strong>CV</strong></a>  
+      📬 <a href="mailto:nina.nikiforova@phd.unibocconi.it">nina.nikiforova@phd.unibocconi.it</a>
+    imageUrl: "/IMAGE4.jpg"
+    imageHeight: 180
+    buttons: []
 
+  assets:
+    disableHLJS: true
+    disableScrollBarStyle: true
+
+  customCSS:
+    - css/custom.css
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+highlight:
+  guessSyntax: true
+  style: xcode
