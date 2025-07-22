@@ -1,135 +1,151 @@
-/* Force PaperMod profile to use flexbox layout with gap */
+/* Custom profile layout with proper spacing */
 
-/* Override PaperMod's profile container */
+/* Main profile container */
 .profile {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 120px !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 60px 20px !important;
-    text-align: left !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 120px; /* Large gap between photo and text */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
-/* Target the profile inner container */
-.profile .profile_inner {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    gap: 120px !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+/* Left side - photo and contact info */
+.profile-left {
+    flex-shrink: 0;
+    text-align: center;
+    width: 220px;
 }
 
-/* Style the profile image */
-.profile .profile_inner img {
-    flex-shrink: 0 !important;
-    width: 200px !important;
-    height: 200px !important;
-    border-radius: 8px !important;
-    object-fit: cover !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    margin: 0 !important;
-    order: 1 !important;
+.profile_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Style the text content area */
-.profile .profile_inner .profile_info {
-    flex: 1 !important;
-    order: 2 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: left !important;
+.profile-name {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: var(--primary);
 }
 
-/* Style the name/title */
-.profile .profile_inner h1 {
-    font-size: 28px !important;
-    font-weight: 600 !important;
-    margin: 0 0 10px 0 !important;
-    color: var(--primary) !important;
+.profile-email {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
-/* Style the subtitle/email */
-.profile .profile_inner .profile_info p {
-    font-size: 16px !important;
-    color: var(--secondary) !important;
-    margin-bottom: 20px !important;
+.profile-email a {
+    color: var(--secondary);
+    text-decoration: none;
 }
 
-/* Style the buttons */
-.profile .profile_inner .buttons {
-    margin-bottom: 40px !important;
+.profile-email a:hover {
+    text-decoration: underline;
 }
 
-.profile .profile_inner .buttons a {
-    display: inline-flex !important;
-    align-items: center !important;
-    padding: 10px 18px !important;
-    background: var(--primary) !important;
+/* CV link styling */
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    background: var(--primary);
     color: var(--theme) !important;
-    text-decoration: none !important;
-    border-radius: 6px !important;
-    font-weight: 500 !important;
-    font-size: 14px !important;
-    transition: opacity 0.2s !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.2s;
 }
 
-.profile .profile_inner .buttons a:hover {
-    opacity: 0.8 !important;
+.cv-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
 }
 
-/* Add custom content after profile */
-.profile::after {
-    content: "I'm a PhD student in Economics at Bocconi University. My research lies at the intersection of political economy and applied industrial organization.\A\A Research\A\A Working Paper 1: Political Economy and Market Structure\A This paper examines the intersection of political economy and industrial organization, focusing on how political factors influence market competition and firm behavior.\A\A Working Paper 2: Applied Industrial Organization in Political Markets\A An empirical analysis of how industrial organization principles apply to political markets, with implications for policy design and electoral competition.\A\A Work in Progress: Economic Policy and Market Dynamics\A Investigating the dynamic relationship between economic policy changes and market structure evolution in regulated industries." !important;
-    white-space: pre-line !important;
-    position: absolute !important;
-    left: 340px !important;
-    top: 120px !important;
-    width: calc(100% - 380px) !important;
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    color: var(--primary) !important;
+/* Right side - content */
+.profile-right {
+    flex: 1;
+    min-width: 0;
 }
 
-/* Alternative: try targeting by more specific selectors */
-body .profile {
-    display: flex !important;
-    gap: 120px !important;
+.profile-description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    color: var(--primary);
+    text-align: left;
 }
 
-body .profile .profile_inner {
-    display: flex !important;
-    gap: 120px !important;
+/* Research section */
+.research-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.research-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--theme);
+}
+
+.research-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primary);
+    line-height: 1.4;
+}
+
+.research-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+/* Hide any default PaperMod elements on the homepage */
+.home-info, .posts-list {
+    display: none;
 }
 
 /* Responsive design */
 @media (max-width: 900px) {
     .profile {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        padding: 40px 20px;
     }
     
-    .profile .profile_inner {
-        flex-direction: column !important;
-        gap: 30px !important;
-        align-items: center !important;
+    .profile-left {
+        align-self: center;
+        width: auto;
     }
     
-    .profile .profile_inner img {
-        width: 160px !important;
-        height: 160px !important;
+    .profile_image {
+        width: 160px;
+        height: 160px;
     }
     
-    .profile::after {
-        position: static !important;
-        width: auto !important;
-        left: auto !important;
-        top: auto !important;
-        margin-top: 30px !important;
+    .profile-name {
+        font-size: 24px;
+    }
+    
+    .profile-description {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .research-section h2 {
+        font-size: 24px;
     }
 }
