@@ -43,12 +43,12 @@ params:
   customCSS:
     - css/custom.css
 
-# Add menu for CV at top
-menu:
-  main:
-    - name: CV
-      url: /cv.pdf
-      weight: 10
+# Remove CV from top menu
+# menu:
+#   main:
+#     - name: CV
+#       url: /cv.pdf
+#       weight: 10
 
 markup:
   goldmark:
