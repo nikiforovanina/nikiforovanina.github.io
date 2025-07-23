@@ -1,0 +1,67 @@
+/* Custom profile layout */
+.profile {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.profile_inner {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 600px !important;
+}
+
+.profile .profile_inner .profile_image {
+    flex-shrink: 0 !important;
+}
+
+.profile .profile_inner .profile_text {
+    flex: 1 !important;
+    text-align: left !important;
+}
+
+.profile .profile_inner .profile_text h1 {
+    margin-bottom: 10px !important;
+    font-size: 2em !important;
+}
+
+.profile .profile_inner .profile_text .subtitle {
+    font-size: 1.1em !important;
+    color: var(--secondary) !important;
+    line-height: 1.4 !important;
+}
+
+.profile .profile_buttons {
+    display: flex !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+}
+
+.profile .profile_buttons .profile_button {
+    padding: 8px 16px !important;
+    background: var(--theme) !important;
+    color: var(--primary) !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.profile .profile_buttons .profile_button:hover {
+    background: var(--secondary) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile_inner {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .profile .profile_inner .profile_text {
+        text-align: center !important;
+    }
+}
