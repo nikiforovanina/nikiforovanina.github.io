@@ -8,60 +8,83 @@
 
 .profile_inner {
     display: flex !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     gap: 30px !important;
     width: 100% !important;
     max-width: 600px !important;
 }
 
-.profile .profile_inner .profile_image {
-    flex-shrink: 0 !important;
+.profile_left {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
 }
 
-.profile .profile_inner .profile_text {
+.profile .profile_image img {
+    border-radius: 0px !important;
+    object-fit: cover !important;
+}
+
+.profile_contact {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.profile_email {
+    font-size: 0.9em !important;
+    color: var(--secondary) !important;
+    text-align: center !important;
+}
+
+.profile .profile_text {
     flex: 1 !important;
     text-align: left !important;
 }
 
-.profile .profile_inner .profile_text h1 {
+.profile .profile_text h1 {
     margin-bottom: 10px !important;
     font-size: 2em !important;
 }
 
-.profile .profile_inner .profile_text .subtitle {
+.profile .profile_text .subtitle {
     font-size: 1.1em !important;
     color: var(--secondary) !important;
     line-height: 1.4 !important;
 }
 
-.profile .profile_buttons {
-    display: flex !important;
-    gap: 15px !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-}
-
-.profile .profile_buttons .profile_button {
+.profile_button {
     padding: 8px 16px !important;
     background: var(--theme) !important;
     color: var(--primary) !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     text-decoration: none !important;
+    font-size: 0.9em !important;
     transition: background-color 0.3s ease !important;
+    border: 1px solid var(--border) !important;
 }
 
-.profile .profile_buttons .profile_button:hover {
+.profile_button:hover {
     background: var(--secondary) !important;
+}
+
+/* Override any circular image styles from theme */
+.profile-mode img, 
+.profile img,
+.profile_image img {
+    border-radius: 0px !important;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     .profile_inner {
         flex-direction: column !important;
-        text-align: center !important;
+        align-items: center !important;
     }
     
-    .profile .profile_inner .profile_text {
+    .profile .profile_text {
         text-align: center !important;
     }
 }
