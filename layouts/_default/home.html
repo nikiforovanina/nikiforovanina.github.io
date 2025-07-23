@@ -32,6 +32,9 @@
                 {{- with .Site.Params.profileMode.subtitle }}
                 <div class="subtitle">{{ . | markdownify }}</div>
                 {{- end }}
+                {{- with .Site.Params.profileMode.description }}
+                <div class="description">{{ . | markdownify }}</div>
+                {{- end }}
             </div>
         </div>
     </div>
@@ -49,9 +52,10 @@
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
-    max-width: 700px;
+    gap: 50px;
+    max-width: 900px;
     width: 100%;
+    justify-content: flex-start;
 }
 
 .profile_left {
@@ -59,10 +63,12 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    flex-shrink: 0;
+    width: 240px;
 }
 
 .profile_image img {
-    border-radius: 8px;
+    border-radius: 0px !important;
     object-fit: cover;
 }
 
@@ -93,6 +99,14 @@
     font-size: 1.2em;
     color: var(--secondary);
     line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.profile_text .description {
+    font-size: 1.1em;
+    color: var(--content);
+    line-height: 1.6;
+    margin-top: 20px;
 }
 
 .profile_button {
@@ -119,6 +133,15 @@
         align-items: center;
         text-align: center;
         gap: 25px;
+    }
+    
+    .profile_left {
+        width: auto;
+    }
+    
+    .profile_image img {
+        width: 180px !important;
+        height: 180px !important;
     }
     
     .profile_text h1 {
