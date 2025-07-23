@@ -59,7 +59,7 @@
     max-width: none;
     transform: scale(1.2);
     transform-origin: top left;
-    margin-left: -80px;
+    margin-left: -200px;
 }
 
 .profile_inner {
@@ -78,7 +78,7 @@
     align-items: center;
     gap: 25px;
     flex-shrink: 0;
-    width: 300px;
+    width: 400px;
     margin-left: 0;
 }
 
@@ -116,12 +116,24 @@
 }
 
 .profile_text .subtitle {
-    font-size: 2.0em;
+    font-size: 2.0em !important;
     color: #000000 !important;
     line-height: 1.6;
     margin-bottom: 35px;
 }
 
+.profile_text .subtitle * {
+    color: #000000 !important;
+}
+
+.subtitle {
+    color: #000000 !important;
+}
+
+.subtitle * {
+    color: #000000 !important;
+}
+    
 .profile_text .description {
     font-size: 1.35em;
     color: var(--content);
