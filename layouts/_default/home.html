@@ -176,11 +176,96 @@
     transform: translateY(-1px);
 }
 
+/* Enhanced responsive design */
+@media (max-width: 1400px) {
+    .profile {
+        margin-left: -150px;
+    }
+    
+    .profile_inner {
+        gap: 120px;
+    }
+    
+    .profile_left {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile {
+        margin-left: -100px;
+        transform: scale(1.1);
+    }
+    
+    .profile_inner {
+        gap: 100px;
+    }
+    
+    .profile_left {
+        width: 320px;
+    }
+    
+    .profile_text {
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .profile {
+        margin-left: -50px;
+        transform: scale(1.0);
+    }
+    
+    .profile_inner {
+        gap: 80px;
+    }
+    
+    .profile_left {
+        width: 280px;
+    }
+    
+    .profile_text {
+        min-width: 400px;
+    }
+    
+    .profile_text h1 {
+        font-size: 2.5em;
+    }
+    
+    .profile_text .subtitle {
+        font-size: 1.8em !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile {
+        margin-left: -20px;
+    }
+    
+    .profile_inner {
+        gap: 60px;
+    }
+    
+    .profile_left {
+        width: 250px;
+    }
+    
+    .profile_image img {
+        width: 160px !important;
+        height: 160px !important;
+    }
+    
+    .profile_email {
+        font-size: 1.3em;
+    }
+}
+
 @media (max-width: 768px) {
     .profile {
         padding: 25px 25px;
         transform: scale(1.0);
         transform-origin: top center;
+        margin-left: 0;
     }
     
     .profile_inner {
@@ -213,11 +298,29 @@
     }
     
     .profile_text .subtitle {
-        font-size: 1.3em;
+        font-size: 1.3em !important;
     }
     
     .working-papers h2 {
         font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile_text h1 {
+        font-size: 1.8em;
+    }
+    
+    .profile_text .subtitle {
+        font-size: 1.1em !important;
+    }
+    
+    .profile_text .description {
+        font-size: 1.1em;
+    }
+    
+    .profile_email {
+        font-size: 1.1em;
     }
 }</style>
 
