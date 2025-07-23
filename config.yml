@@ -31,11 +31,11 @@ params:
   # Profile mode configuration
   profileMode:
     enabled: true
-    title: "Nina Nikiforova"
-    subtitle: "PhD Student in Economics at Bocconi University"
+    title: "Nina Nikiforova" 
+    subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
     imageUrl: "/IMAGE4.jpg"
-    imageWidth: 150
-    imageHeight: 150
+    imageWidth: 200
+    imageHeight: 200
     imageTitle: "Nina Nikiforova"
     buttons:
       - name: CV
