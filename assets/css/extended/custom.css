@@ -1,133 +1,67 @@
-{{- define "main" }}
-
-<article class="post" id="profile-mode">
-    <div class="profile">
-        <div class="profile_inner">
-            <div class="profile_left">
-                {{- with .Site.Params.profileMode.imageUrl }}
-                <div class="profile_image">
-                    <img draggable="false" src="{{.}}" alt="{{ $.Site.Params.profileMode.imageTitle | default "profile image" }}" 
-                         height="{{ $.Site.Params.profileMode.imageHeight | default 120 }}" 
-                         width="{{ $.Site.Params.profileMode.imageWidth | default 120 }}" />
-                </div>
-                {{- end }}
-                
-                <div class="profile_contact">
-                    {{- with .Site.Params.profileMode.email }}
-                    <div class="profile_email">{{ . }}</div>
-                    {{- end }}
-                    
-                    {{- if .Site.Params.profileMode.buttons }}
-                    {{- range .Site.Params.profileMode.buttons }}
-                    <a class="profile_button" href="{{ .url | absLangURL }}" title="{{ .name }}">
-                        {{ .name }}
-                    </a>
-                    {{- end }}
-                    {{- end }}
-                </div>
-            </div>
-            
-            <div class="profile_text">
-                <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
-                {{- with .Site.Params.profileMode.subtitle }}
-                <div class="subtitle">{{ . | markdownify }}</div>
-                {{- end }}
-            </div>
-        </div>
-    </div>
-</article>
-
-<style>
+/* Custom profile layout */
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 40px 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
 }
 
 .profile_inner {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 700px;
-    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 600px !important;
 }
 
-.profile_left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.profile .profile_inner .profile_image {
+    flex-shrink: 0 !important;
 }
 
-.profile_image img {
-    border-radius: 8px;
-    object-fit: cover;
+.profile .profile_inner .profile_text {
+    flex: 1 !important;
+    text-align: left !important;
 }
 
-.profile_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.profile .profile_inner .profile_text h1 {
+    margin-bottom: 10px !important;
+    font-size: 2em !important;
 }
 
-.profile_email {
-    font-size: 0.95em;
-    color: var(--secondary);
-    text-align: center;
+.profile .profile_inner .profile_text .subtitle {
+    font-size: 1.1em !important;
+    color: var(--secondary) !important;
+    line-height: 1.4 !important;
 }
 
-.profile_text {
-    flex: 1;
+.profile .profile_buttons {
+    display: flex !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
 }
 
-.profile_text h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    font-weight: 600;
+.profile .profile_buttons .profile_button {
+    padding: 8px 16px !important;
+    background: var(--theme) !important;
+    color: var(--primary) !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease !important;
 }
 
-.profile_text .subtitle {
-    font-size: 1.2em;
-    color: var(--secondary);
-    line-height: 1.5;
+.profile .profile_buttons .profile_button:hover {
+    background: var(--secondary) !important;
 }
 
-.profile_button {
-    padding: 8px 16px;
-    background: var(--theme);
-    color: var(--primary);
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9em;
-    transition: all 0.3s ease;
-    border: 1px solid var(--border);
-    text-align: center;
-}
-
-.profile_button:hover {
-    background: var(--secondary);
-    transform: translateY(-1px);
-}
-
+/* Responsive design */
 @media (max-width: 768px) {
     .profile_inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 25px;
+        flex-direction: column !important;
+        text-align: center !important;
     }
     
-    .profile_text h1 {
-        font-size: 2em;
+    .profile .profile_inner .profile_text {
+        text-align: center !important;
     }
 }
-</style>
-
-{{- end }}
-
-{{- define "footer" }}
-{{- end }}
