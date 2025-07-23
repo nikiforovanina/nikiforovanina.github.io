@@ -1,19 +1,14 @@
-baseURL: "https://nikiforovanina.github.io/"
-languageCode: "en-us"
-title: "Nina Nikiforova"
-theme: "PaperMod"
-
-# Fixed pagination (was causing the first error)
-pagination:
-  pagerSize: 20
-
+baseURL: "https://ninanikiforova.org/"
+title: Nina Nikiforova
+theme: PaperMod
+paginate: 20
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
 params:
   description: "PhD Student in Economics at Bocconi University"
-  author: "Nina Nikiforova"
-  defaultTheme: "light"
+  author: Nina Nikiforova
+  defaultTheme: light
   disableThemeToggle: true
   hideFooter: true
   ShowReadingTime: false
@@ -24,31 +19,36 @@ params:
   disableSpecial1stPost: true
   ShowToc: false
   
-  # Disable social features to avoid .Site.Social errors
-  socialIcons: []
-  social: []
-  
-  # Profile mode configuration
   profileMode:
     enabled: true
-    title: "Nina Nikiforova"
-    subtitle: "PhD Student in Economics at Bocconi University"
+    title: ""  # Remove title from here, we'll add it in custom layout
+    subtitle: ""  # Remove subtitle, we'll restructure this
     imageUrl: "/IMAGE4.jpg"
-    imageWidth: 150
-    imageHeight: 150
-    imageTitle: "Nina Nikiforova"
-    buttons:
-      - name: CV
-        url: "/cv.pdf"
-      - name: Email
-        url: "mailto:nina.nikiforova@phd.unibocconi.it"
-
-  # Assets configuration
+    imageHeight: 200
+    buttons: []
+  
+  # Custom params for the new layout
+  customProfile:
+    name: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    cvLink: "/cv.pdf"
+    description: |
+      I'm a PhD student in Economics at Bocconi University.  
+      My research lies at the intersection of political economy and applied industrial organization.
+    
   assets:
-    favicon: "/apple-touch-icon.png"
-    favicon16x16: "/apple-touch-icon.png"
-    favicon32x32: "/apple-touch-icon.png"
-    apple_touch_icon: "/apple-touch-icon.png"
+    disableHLJS: true
+    disableScrollBarStyle: true
+  
+  customCSS:
+    - css/custom.css
+
+# Remove CV from top menu
+# menu:
+#   main:
+#     - name: CV
+#       url: /cv.pdf
+#       weight: 10
 
 markup:
   goldmark:
@@ -57,4 +57,4 @@ markup:
 
 highlight:
   guessSyntax: true
-  style: "github"
+  style: xcode
