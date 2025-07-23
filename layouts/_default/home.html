@@ -44,18 +44,20 @@
 .profile {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
     padding: 40px 20px;
+    width: 100%;
 }
 
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 50px;
-    max-width: 900px;
+    gap: 60px;
+    max-width: 1200px;
     width: 100%;
     justify-content: flex-start;
+    margin-left: 0;
 }
 
 .profile_left {
@@ -65,6 +67,7 @@
     gap: 20px;
     flex-shrink: 0;
     width: 240px;
+    margin-left: 0;
 }
 
 .profile_image img {
@@ -87,6 +90,8 @@
 
 .profile_text {
     flex: 1;
+    max-width: none;
+    width: 100%;
 }
 
 .profile_text h1 {
