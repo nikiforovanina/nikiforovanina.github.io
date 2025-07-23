@@ -1,86 +1,95 @@
-# Workflow for building and deploying Hugo website to GitHub Pages
-name: Deploy Hugo website to Pages
+baseURL: "https://nikiforovanina.github.io/"
+title: Nina Nikiforova
+theme: PaperMod
+pagination:
+  pagerSize: 20
+enableInlineShortcodes: true
+enableRobotsTXT: true
 
-on:
-  # Run on pushes targeting the default branch
-  push:
-    branches: ["main"]
+params:
+  description: "PhD Student in Economics at Bocconi University"
+  author: Nina Nikiforova
+  defaultTheme: light
+  disableThemeToggle: true
+  hideFooter: true
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableScrollToTop: true
+  disableSpecial1stPost: true
+  ShowToc: false
+  
+  # Enable custom profile mode
+  profileMode:
+    enabled: true
+    title: ""  # We'll handle title in custom layout
+    subtitle: ""
+    imageUrl: "/IMAGE4.jpg"
+    imageWidth: 150
+    imageHeight: 150
+    buttons: []  # We'll handle buttons in custom layout
+  
+  # Social media links (replaces deprecated .Site.Social)
+  socialIcons:
+    - name: "email"
+      url: "mailto:nina.nikiforova@phd.unibocconi.it"
+    - name: "twitter"
+      url: "https://twitter.com/yourusername"  # Update with actual Twitter URL
+    - name: "cv"
+      url: "/cv.pdf"
+  
+  # Custom profile data for academic layout
+  customProfile:
+    name: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    cvLink: "/cv.pdf"
+    imageUrl: "/IMAGE4.jpg"
+    imageWidth: 150
+    imageHeight: 150 
+    shortDescription: "I am a fourth-year PhD student in Economics at Bocconi University."
+    description: "My research interests lie in the fields of political economy and applied industrial organization."
+    
+    # Academic sections
+    workingPapers:
+      - title: "Discontent first, Ideology Later"
+        coauthors: ""
+        status: ""
+        link: ""
+        abstract: "Add your abstract here..."
+      # Add more papers by duplicating the structure above
+    
+    # Publications section
+   # publications:
+      # - title: "Your Published Paper Title"
+      #   coauthors: "Co-author Name"
+      #   journal: "Journal Name, Vol. X, Year"
+      #   link: "https://link-to-paper.com"
+    
+    # Work in progress section  
+  #  worksInProgress:
+      # - title: "Your Work in Progress Title"
+      #   coauthors: "Co-author Name"
+      #   status: "Draft available upon request"
+  
+  assets:
+    favicon: "/apple-touch-icon.png"
+    favicon16x16: "/apple-touch-icon.png"
+    favicon32x32: "/apple-touch-icon.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    disableHLJS: true
+    disableScrollBarStyle: true
+  
+  # Updated CSS reference
+  assets:
+    customCSS:
+      - css/academic.css
 
-  # Permission to run this workflow manually from the Actions tab
-  workflow_dispatch:
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
-  # Triggered by the 'Fetch data and update dashboard' workflow via repository_dispatch
-  repository_dispatch:
-    types: [data-committed-for-deploy]
-
-# Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
-jobs:
-  build:
-    # Build job only runs for 'push', 'workflow_dispatch', or a repository_dispatch with committed: true
-    if: |
-      github.event_name == 'push' ||
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'repository_dispatch' && github.event.client_payload.committed == 'true')
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.147.9
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-        run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
-  deploy:
-    # Deploy job only runs for 'push', 'workflow_dispatch', or a repository_dispatch with committed: true
-    if: |
-      github.event_name == 'push' ||
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'repository_dispatch' && github.event.client_payload.committed == 'true')
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+highlight:
+  guessSyntax: true
+  style: github
