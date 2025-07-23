@@ -35,6 +35,14 @@
                 {{- with .Site.Params.profileMode.description }}
                 <div class="description">{{ . | markdownify }}</div>
                 {{- end }}
+                {{- with .Site.Params.profileMode.workingPapers }}
+                <div class="working-papers">
+                    <h2>{{ . }}</h2>
+                    <div class="papers-content">
+                        <p>Coming soon...</p>
+                    </div>
+                </div>
+                {{- end }}
             </div>
         </div>
     </div>
@@ -45,10 +53,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
-    padding: 40px 5px 40px 50px;
+    gap: 40px;
+    padding: 50px 5px 50px 60px;
     width: 100%;
     max-width: none;
+    zoom: 1.15;
 }
 
 .profile_inner {
@@ -65,9 +74,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     flex-shrink: 0;
-    width: 240px;
+    width: 280px;
     margin-left: 0;
 }
 
@@ -84,9 +93,10 @@
 }
 
 .profile_email {
-    font-size: 0.95em;
-    color: var(--secondary);
+    font-size: 1.0em;
+    color: var(--primary);
     text-align: center;
+    font-weight: 500;
 }
 
 .profile_text {
@@ -97,23 +107,41 @@
 }
 
 .profile_text h1 {
-    font-size: 2.5em;
-    margin-bottom: 25px;
+    font-size: 3.0em;
+    margin-bottom: 30px;
     font-weight: 600;
 }
 
 .profile_text .subtitle {
-    font-size: 1.3em;
-    color: var(--secondary);
+    font-size: 1.5em;
+    color: var(--primary);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    font-weight: 500;
 }
 
 .profile_text .description {
-    font-size: 1.2em;
+    font-size: 1.35em;
     color: var(--content);
     line-height: 1.7;
-    margin-top: 30px;
+    margin-top: 35px;
+}
+
+.working-papers {
+    margin-top: 50px;
+}
+
+.working-papers h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.papers-content {
+    font-size: 1.2em;
+    color: var(--secondary);
+    line-height: 1.6;
 }
 
 .profile_button {
@@ -136,25 +164,27 @@
 
 @media (max-width: 768px) {
     .profile {
-        padding: 40px 20px;
+        padding: 50px 25px;
+        zoom: 1.0;
     }
     
     .profile_inner {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 25px;
+        gap: 30px;
         max-width: 100%;
         width: 100%;
     }
     
     .profile_left {
         width: auto;
+        gap: 20px;
     }
     
     .profile_image img {
-        width: 180px !important;
-        height: 180px !important;
+        width: 200px !important;
+        height: 200px !important;
     }
     
     .profile_text {
@@ -164,10 +194,17 @@
     }
     
     .profile_text h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
-}
-</style>
+    
+    .profile_text .subtitle {
+        font-size: 1.3em;
+    }
+    
+    .working-papers h2 {
+        font-size: 1.8em;
+    }
+}</style>
 
 {{- end }}
 
