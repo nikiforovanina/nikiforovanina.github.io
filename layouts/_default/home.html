@@ -30,7 +30,7 @@
             <div class="profile_text">
                 <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
                 {{- with .Site.Params.profileMode.subtitle }}
-                <div class="subtitle">{{ . | markdownify }}</div>
+                <div class="subtitle profile-subtitle-custom">{{ . | markdownify }}</div>
                 {{- end }}
                 {{- with .Site.Params.profileMode.description }}
                 <div class="description">{{ . | markdownify }}</div>
@@ -59,7 +59,7 @@
     max-width: none;
     transform: scale(1.2);
     transform-origin: top left;
-    margin-left: -300px;
+    margin-left: -200px;
 }
 
 .profile_inner {
@@ -120,6 +120,25 @@
     color: #000000 !important;
     line-height: 1.6;
     margin-bottom: 35px;
+}
+
+.profile-subtitle-custom {
+    font-size: 2.8em !important;
+    color: #000000 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 35px !important;
+    font-weight: 500 !important;
+}
+
+.profile-subtitle-custom * {
+    font-size: inherit !important;
+    color: #000000 !important;
+}
+
+.profile-subtitle-custom p {
+    font-size: 2.8em !important;
+    color: #000000 !important;
+    margin: 0 !important;
 }
 
 .profile_text .subtitle * {
@@ -235,6 +254,14 @@
     .profile_text .subtitle {
         font-size: 1.8em !important;
     }
+    
+    .profile-subtitle-custom {
+        font-size: 2.4em !important;
+    }
+    
+    .profile-subtitle-custom p {
+        font-size: 2.4em !important;
+    }
 }
 
 @media (max-width: 900px) {
@@ -299,6 +326,14 @@
     
     .profile_text .subtitle {
         font-size: 1.3em !important;
+    }
+    
+    .profile-subtitle-custom {
+        font-size: 1.8em !important;
+    }
+    
+    .profile-subtitle-custom p {
+        font-size: 1.8em !important;
     }
     
     .working-papers h2 {
