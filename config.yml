@@ -24,6 +24,10 @@ params:
   disableSpecial1stPost: true
   ShowToc: false
   
+  # Disable social features to avoid .Site.Social errors
+  socialIcons: []
+  social: []
+  
   # Profile mode configuration
   profileMode:
     enabled: true
