@@ -3,13 +3,29 @@
 <article class="post" id="profile-mode">
     <div class="profile">
         <div class="profile_inner">
-            {{- with .Site.Params.profileMode.imageUrl }}
-            <div class="profile_image">
-                <img draggable="false" src="{{.}}" alt="{{ $.Site.Params.profileMode.imageTitle | default "profile image" }}" 
-                     height="{{ $.Site.Params.profileMode.imageHeight | default 120 }}" 
-                     width="{{ $.Site.Params.profileMode.imageWidth | default 120 }}" />
+            <div class="profile_left">
+                {{- with .Site.Params.profileMode.imageUrl }}
+                <div class="profile_image">
+                    <img draggable="false" src="{{.}}" alt="{{ $.Site.Params.profileMode.imageTitle | default "profile image" }}" 
+                         height="{{ $.Site.Params.profileMode.imageHeight | default 120 }}" 
+                         width="{{ $.Site.Params.profileMode.imageWidth | default 120 }}" />
+                </div>
+                {{- end }}
+                
+                <div class="profile_contact">
+                    {{- with .Site.Params.profileMode.email }}
+                    <div class="profile_email">{{ . }}</div>
+                    {{- end }}
+                    
+                    {{- if .Site.Params.profileMode.buttons }}
+                    {{- range .Site.Params.profileMode.buttons }}
+                    <a class="profile_button" href="{{ .url | absLangURL }}" title="{{ .name }}">
+                        {{ .name }}
+                    </a>
+                    {{- end }}
+                    {{- end }}
+                </div>
             </div>
-            {{- end }}
             
             <div class="profile_text">
                 <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
@@ -18,16 +34,6 @@
                 {{- end }}
             </div>
         </div>
-        
-        {{- if .Site.Params.profileMode.buttons }}
-        <div class="profile_buttons">
-            {{- range .Site.Params.profileMode.buttons }}
-            <a class="profile_button" href="{{ .url | absLangURL }}" title="{{ .name }}">
-                {{ .name }}
-            </a>
-            {{- end }}
-        </div>
-        {{- end }}
     </div>
 </article>
 
@@ -42,15 +48,35 @@
 
 .profile_inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     max-width: 700px;
     width: 100%;
 }
 
+.profile_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .profile_image img {
-    border-radius: 50%;
+    border-radius: 8px;
     object-fit: cover;
+}
+
+.profile_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_email {
+    font-size: 0.95em;
+    color: var(--secondary);
+    text-align: center;
 }
 
 .profile_text {
@@ -69,32 +95,28 @@
     line-height: 1.5;
 }
 
-.profile_buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .profile_button {
-    padding: 12px 24px;
+    padding: 8px 16px;
     background: var(--theme);
     color: var(--primary);
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.9em;
     transition: all 0.3s ease;
     border: 1px solid var(--border);
+    text-align: center;
 }
 
 .profile_button:hover {
     background: var(--secondary);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
     .profile_inner {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 25px;
     }
