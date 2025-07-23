@@ -33,9 +33,10 @@ params:
     enabled: true
     title: "Nina Nikiforova" 
     subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
+    description: "My research interests mostly lie in political economy and applied industrial organization. I study strategic behavior in political contexts, with a particular focus on electoral competition, using both structural and reduced-form methods."
     imageUrl: "/IMAGE4.jpg"
-    imageWidth: 200
-    imageHeight: 200
+    imageWidth: 240
+    imageHeight: 240
     imageTitle: "Nina Nikiforova"
     email: "nina.nikiforova@phd.unibocconi.it"
     buttons:
