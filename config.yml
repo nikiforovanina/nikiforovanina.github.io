@@ -37,11 +37,10 @@ params:
     imageWidth: 200
     imageHeight: 200
     imageTitle: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
     buttons:
       - name: CV
         url: "/cv.pdf"
-      - name: Email
-        url: "mailto:nina.nikiforova@phd.unibocconi.it"
 
   # Assets configuration
   assets:
