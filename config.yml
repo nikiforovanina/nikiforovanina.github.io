@@ -29,25 +29,20 @@ params:
   social: []
   
   # Profile mode configuration
-profileMode:
-  enabled: true
-  title: "Nina Nikiforova"    # this will become the name under the photo
-  subtitle: >
-    Hi, I am a PhD student in Economics at Bocconi University. My research
-    interests mostly lie in political economy and applied industrial
-    organization. I study strategic behavior in political contexts, with a
-    particular focus on electoral competition.
-  # `description` is not used by profileMode, so you can delete it or ignore it
-  # description: "..."
-  workingPapers: "Working Papers"
-  imageUrl: "/IMAGE4.jpg"
-  imageWidth: 350
-  imageHeight: 350
-  imageTitle: "Nina Nikiforova"
-  email: "nina.nikiforova@phd.unibocconi.it"
-  buttons:
-    - name: CV
-      url: "/cv.pdf"
+  profileMode:
+    enabled: true
+    title: "Nina Nikiforova" 
+    subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
+    description: "My research interests mostly lie in political economy and applied industrial organization. I study behavior of voters and politicians, with a particular focus on elections."
+    workingPapers: "Working Papers"
+    imageUrl: "/IMAGE4.jpg"
+    imageWidth: 350
+    imageHeight: 350
+    imageTitle: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    buttons:
+      - name: CV
+        url: "/cv.pdf"
 
   # Assets configuration
   assets:
