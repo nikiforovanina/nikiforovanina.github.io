@@ -1,0 +1,16 @@
+/* Center the main PaperMod content and remove big left offset */
+.main {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 900px;        /* tweak this if you want wider/narrower text */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Specifically for the home page in profileMode */
+.home .profile,
+.home .first-entry,
+.home .page {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
