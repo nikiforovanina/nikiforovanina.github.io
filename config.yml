@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Nina Nikiforova"
 theme: "PaperMod"
 
-# Hugo >= 0.128 uses pagination.pagerSize
+# Fixed pagination (was causing the first error)
 pagination:
   pagerSize: 20
 
@@ -23,26 +23,25 @@ params:
   disableScrollToTop: true
   disableSpecial1stPost: true
   ShowToc: false
-
-  # If you later want social icons under the email, you can add them here
+  
+  # Disable social features to avoid .Site.Social errors
   socialIcons: []
   social: []
-
-  # Profile mode configuration (main block at the top of the home page)
+  
+  # Profile mode configuration
   profileMode:
     enabled: true
-    title: "Nina Nikiforova"
-    subtitle: "PhD Student in Economics at Bocconi University"
-    # Use this description for a short one–liner if you want;
-    # OR you can leave it out and keep everything in _index.md instead.
-    # description: "My research interests mostly lie in political economy and applied industrial organization."
+    title: "Nina Nikiforova" 
+    subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
+    description: "My research interests mostly lie in political economy and applied industrial organization. I study behavior of voters and politicians, with a particular focus on elections."
+    workingPapers: "Working Papers"
     imageUrl: "/IMAGE4.jpg"
     imageWidth: 280
     imageHeight: 280
     imageTitle: "Nina Nikiforova"
     email: "nina.nikiforova@phd.unibocconi.it"
     buttons:
-      - name: "CV"
+      - name: CV
         url: "/cv.pdf"
 
   # Assets configuration
@@ -60,11 +59,3 @@ markup:
 highlight:
   guessSyntax: true
   style: "github"
-
-# Top menu (like Anna’s “Anna Russo | CV” bar)
-menu:
-  main:
-    - identifier: "cv"
-      name: "CV"
-      url: "/cv.pdf"
-      weight: 1
