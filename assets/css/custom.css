@@ -1,42 +1,89 @@
-body {
-  font-family: Georgia, serif;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: #0050a0;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Center main content and reduce big left margin */
+/* ----- Center the main column on the page ----- */
 main,
 .main,
 .page {
-    max-width: 900px !important;      /* widen or shrink as you like */
+    max-width: 1000px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-/* On very wide screens, let content be a bit wider */
-@media (min-width: 1200px) {
-    main,
-    .main,
-    .page {
-        max-width: 1100px !important;
+/* ----- Profile layout from PaperMod's profileMode ----- */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Two-column layout: left = photo + name + button, right = text */
+.profile_inner {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "img text"
+        "name text"
+        "buttons text";
+    column-gap: 2.5rem;
+    align-items: flex-start;
+}
+
+/* Photo: left column */
+.profile img {
+    grid-area: img;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0; /* keep square */
+    display: block;
+}
+
+/* Name: UNDER the photo, still in the left column */
+.profile h1 {
+    grid-area: name;
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Text: full right column, starting with "Hi, I am..." */
+.profile span {
+    grid-area: text;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* CV button under the name */
+.profile .buttons {
+    grid-area: buttons;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the CV button a bit */
+.profile .button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+}
+
+/* Make it look good on mobile */
+@media (max-width: 768px) {
+    .profile_inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "img"
+            "name"
+            "text"
+            "buttons";
+        row-gap: 1rem;
+    }
+
+    .profile span {
+        text-align: center;
     }
 }
