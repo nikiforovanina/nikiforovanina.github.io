@@ -7,8 +7,8 @@
                 {{- with .Site.Params.profileMode.imageUrl }}
                 <div class="profile_image">
                     <img draggable="false" src="{{.}}" alt="{{ $.Site.Params.profileMode.imageTitle | default "profile image" }}" 
-                         height="{{ $.Site.Params.profileMode.imageHeight | default 200 }}" 
-                         width="{{ $.Site.Params.profileMode.imageWidth | default 200 }}" />
+                         height="{{ $.Site.Params.profileMode.imageHeight | default 400 }}" 
+                         width="{{ $.Site.Params.profileMode.imageWidth | default 400 }}" />
                 </div>
                 {{- end }}
                 
