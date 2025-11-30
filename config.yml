@@ -36,8 +36,8 @@ params:
     description: "My research interests mostly lie in political economy and applied industrial organization. I study behavior of voters and politicians, with a particular focus on elections."
     workingPapers: "Working Papers"
     imageUrl: "/IMAGE4.jpg"
-    imageWidth: 350
-    imageHeight: 350
+    imageWidth: 500
+    imageHeight: 500
     imageTitle: "Nina Nikiforova"
     email: "nina.nikiforova@phd.unibocconi.it"
     buttons:
