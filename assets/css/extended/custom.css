@@ -88,3 +88,19 @@
         text-align: center !important;
     }
 }
+
+/* Center the main content on the page, remove big left gap */
+.main {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 900px !important;    /* you can increase/decrease this */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Make sure the home/profile page is centered as well */
+.home .page,
+.home .profile {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
