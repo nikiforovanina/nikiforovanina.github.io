@@ -188,8 +188,6 @@
     color: #000000; /* default text inside profile_text = black */
 }
 
-/* No name on the right side anymore, so no h1 used */
-
 /* === SUBTITLE (Hi, I am a PhD student...) === */
 .profile_text .subtitle {
     font-size: 1.35em !important;   /* same size as description */
@@ -198,14 +196,12 @@
     margin-bottom: 20px;
 }
 
-/* The subtitle text is inside a <p>, so force that too */
 .profile_text .subtitle p {
-    font-size: 1em !important;      /* 1em of 1.35em parent = 1.35em total */
+    font-size: 1em !important;
     color: #000000 !important;
     margin: 0;
 }
 
-/* Extra safety: anything inside .subtitle is black */
 .subtitle,
 .subtitle * {
     color: #000000 !important;
@@ -339,7 +335,6 @@
     .profile_text {
         min-width: 400px;
     }
-    
 }
 
 @media (max-width: 900px) {
@@ -365,18 +360,20 @@
     }
 }
 
+/* PHONE / NARROW: text left-aligned */
 @media (max-width: 768px) {
     .profile {
         padding: 25px 25px;
         transform: scale(1.0);
         transform-origin: top center;
         margin-left: 0;
+        align-items: flex-start;
     }
     
     .profile_inner {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start; /* left, not center */
+        text-align: left;        /* default text alignment */
         gap: 30px;
         max-width: 100%;
         width: 100%;
@@ -385,6 +382,12 @@
     .profile_left {
         width: auto;
         gap: 16px;
+        align-items: flex-start;   /* left-align name/email/buttons */
+    }
+
+    .profile_contact {
+        align-items: flex-start;
+        text-align: left;
     }
     
     .profile_image img {
@@ -396,8 +399,15 @@
         width: 100%;
         min-width: 0;
         max-width: 100%;
+        text-align: left;          /* ensure text is left-aligned */
     }
 
+    .working-papers,
+    .papers-content,
+    .paper-title,
+    .paper-abstract {
+        text-align: left;
+    }
     
     .working-papers h2 {
         font-size: 1.3em;
@@ -405,7 +415,6 @@
 }
 
 @media (max-width: 480px) {
-    
     .profile_text .description {
         font-size: 1.1em;
     }
