@@ -187,21 +187,23 @@
 
 /* No name on the right side anymore, so no h1 used */
 
+/* === SUBTITLE (Hi, I am a PhD student...) === */
 .profile_text .subtitle {
     font-size: 1.35em !important;   /* same size as description */
-    color: #000000 !important;      /* force black */
+    color: #000000 !important;
     line-height: 1.7;
-    margin-bottom: 20px;            /* a bit tighter spacing (optional) */
+    margin-bottom: 20px;
 }
 
-.profile_text .subtitle * {
+/* The subtitle text is inside a <p>, so force that too */
+.profile_text .subtitle p {
+    font-size: 1em !important;      /* 1em of 1.35em parent = 1.35em total */
     color: #000000 !important;
+    margin: 0;
 }
 
-.subtitle {
-    color: #000000 !important;
-}
-
+/* Extra safety: anything inside .subtitle is black */
+.subtitle,
 .subtitle * {
     color: #000000 !important;
 }
@@ -335,9 +337,6 @@
         min-width: 400px;
     }
     
-    .profile_text .subtitle {
-        font-size: 1.8em !important;
-    }
 }
 
 @media (max-width: 900px) {
@@ -395,10 +394,7 @@
         min-width: 0;
         max-width: 100%;
     }
-    
-    .profile_text .subtitle {
-        font-size: 1.3em !important;
-    }
+
     
     .working-papers h2 {
         font-size: 1.3em;
@@ -406,9 +402,6 @@
 }
 
 @media (max-width: 480px) {
-    .profile_text .subtitle {
-        font-size: 1.1em !important;
-    }
     
     .profile_text .description {
         font-size: 1.1em;
