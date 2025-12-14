@@ -20,7 +20,7 @@
                     {{- with .Site.Params.profileMode.email }}
                     <div class="profile_email">{{ . }}</div>
                     {{- end }}
-                    <!-- CV button removed on purpose -->
+                    <!-- no button anymore -->
                 </div>
             </div>
             
@@ -118,27 +118,31 @@
 </article>
 
 <style>
+/* Anchor this article to the left instead of centered narrow column */
+#profile-mode {
+    max-width: 1200px;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+/* Main layout */
 .profile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    padding: 50px 0px 50px 0px;
+    padding: 0 0 50px 0;
     width: 100%;
-    max-width: none;
-    transform: scale(1.2);
-    transform-origin: top left;
-    margin-left: -200px;
+    max-width: 100%;
 }
 
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 150px;
-    max-width: none;
+    gap: 120px;
     width: 100%;
     justify-content: flex-start;
-    margin-left: 0;
 }
 
 .profile_left {
@@ -147,8 +151,7 @@
     align-items: center;
     gap: 16px;
     flex-shrink: 0;
-    width: 400px;
-    margin-left: 0;
+    width: 340px;
 }
 
 .profile_image img {
@@ -181,9 +184,8 @@
 
 .profile_text {
     flex: 1;
-    max-width: none;
     width: 100%;
-    min-width: 600px;
+    min-width: 500px;
     color: #000000;
 }
 
@@ -262,81 +264,38 @@
     color: #000000;
 }
 
-/* Old button styles kept, in case you ever restore them
-.profile_button { ... }
-*/
-
-/* Responsive tweaks */
-@media (max-width: 1400px) {
-    .profile {
-        margin-left: -150px;
-    }
-    
-    .profile_inner {
-        gap: 120px;
-    }
-    
-    .profile_left {
-        width: 350px;
-    }
-}
+/* --- Responsive tweaks --- */
 
 @media (max-width: 1200px) {
-    .profile {
-        margin-left: -100px;
-        transform: scale(1.1);
+    #profile-mode {
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: none;
     }
-    
-    .profile_inner {
-        gap: 100px;
-    }
-    
-    .profile_left {
-        width: 320px;
-    }
-    
-    .profile_text {
-        min-width: 500px;
-    }
-}
 
-@media (max-width: 1024px) {
-    .profile {
-        margin-left: -50px;
-        transform: scale(1.0);
-    }
-    
     .profile_inner {
         gap: 80px;
     }
-    
-    .profile_left {
-        width: 280px;
-    }
-    
+
     .profile_text {
-        min-width: 400px;
+        min-width: 0;
     }
 }
 
 @media (max-width: 900px) {
-    .profile {
-        margin-left: -20px;
-    }
-    
     .profile_inner {
-        gap: 60px;
+        gap: 50px;
     }
-    
+
     .profile_left {
-        width: 250px;
+        width: 280px;
     }
-    
+
     .profile_image img {
         width: 190px !important;
         height: 190px !important;
     }
-    
+
     .profile_email {
         font-size: 1.2em;
     }
@@ -344,26 +303,21 @@
 
 /* Phone / narrow */
 @media (max-width: 768px) {
-    .profile {
-        padding: 25px 25px;
-        transform: scale(1.0);
-        transform-origin: top center;
-        margin-left: 0;
-        align-items: flex-start;
+    #profile-mode {
+        margin: 24px 16px;
+        max-width: none;
     }
-    
+
     .profile_inner {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
         gap: 30px;
-        max-width: 100%;
         width: 100%;
     }
-    
+
     .profile_left {
-        width: auto;
-        gap: 16px;
+        width: 100%;
         align-items: flex-start;
     }
 
@@ -371,17 +325,16 @@
         align-items: flex-start;
         text-align: left;
     }
-    
+
     .profile_image img {
         width: 170px !important;
         height: 170px !important;
     }
-    
+
     .profile_text {
         width: 100%;
-        min-width: 0;
-        max-width: 100%;
         text-align: left;
+        min-width: 0;
     }
 
     .working-papers,
@@ -390,7 +343,7 @@
     .paper-abstract {
         text-align: left;
     }
-    
+
     .working-papers h2 {
         font-size: 1.3em;
     }
@@ -400,7 +353,7 @@
     .profile_text .description {
         font-size: 1.1em;
     }
-    
+
     .profile_email {
         font-size: 1.1em;
     }
