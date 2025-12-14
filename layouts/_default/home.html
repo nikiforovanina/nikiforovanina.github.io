@@ -11,6 +11,10 @@
                          width="{{ $.Site.Params.profileMode.imageWidth | default 400 }}" />
                 </div>
                 {{- end }}
+
+                {{- with .Site.Params.profileMode.title }}
+                <div class="profile_name">{{ . }}</div>
+                {{- end }}
                 
                 <div class="profile_contact">
                     {{- with .Site.Params.profileMode.email }}
@@ -28,7 +32,6 @@
             </div>
             
             <div class="profile_text">
-                <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
                 {{- with .Site.Params.profileMode.subtitle }}
                 <div class="subtitle">{{ . | markdownify }}</div>
                 {{- end }}
@@ -140,7 +143,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 16px;
     flex-shrink: 0;
     width: 400px;
     margin-left: 0;
@@ -149,8 +152,15 @@
 .profile_image img {
     border-radius: 0px !important;
     object-fit: cover;
-    width: 180px !important;
-    height: 180px !important;
+    width: 220px !important;   /* bigger picture */
+    height: 220px !important;
+}
+
+.profile_name {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
 }
 
 .profile_contact {
@@ -161,10 +171,10 @@
 }
 
 .profile_email {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000000;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .profile_text {
@@ -175,11 +185,7 @@
     color: #000000; /* default text inside profile_text = black */
 }
 
-.profile_text h1 {
-    font-size: 3.0em;
-    margin-bottom: 30px;
-    color: #000000;
-}
+/* No name on the right side anymore, so no h1 used */
 
 .profile_text .subtitle {
     font-size: 2.0em !important;
@@ -329,10 +335,6 @@
         min-width: 400px;
     }
     
-    .profile_text h1 {
-        font-size: 2.5em;
-    }
-    
     .profile_text .subtitle {
         font-size: 1.8em !important;
     }
@@ -352,12 +354,12 @@
     }
     
     .profile_image img {
-        width: 160px !important;
-        height: 160px !important;
+        width: 190px !important;
+        height: 190px !important;
     }
     
     .profile_email {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
@@ -380,22 +382,18 @@
     
     .profile_left {
         width: auto;
-        gap: 20px;
+        gap: 16px;
     }
     
     .profile_image img {
-        width: 140px !important;
-        height: 140px !important;
+        width: 170px !important;
+        height: 170px !important;
     }
     
     .profile_text {
         width: 100%;
         min-width: 0;
         max-width: 100%;
-    }
-    
-    .profile_text h1 {
-        font-size: 2.2em;
     }
     
     .profile_text .subtitle {
@@ -408,10 +406,6 @@
 }
 
 @media (max-width: 480px) {
-    .profile_text h1 {
-        font-size: 1.8em;
-    }
-    
     .profile_text .subtitle {
         font-size: 1.1em !important;
     }
