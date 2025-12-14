@@ -20,25 +20,23 @@
                     {{- with .Site.Params.profileMode.email }}
                     <div class="profile_email">{{ . }}</div>
                     {{- end }}
-                    <!-- no button anymore -->
+                    <!-- no button here anymore -->
                 </div>
             </div>
             
             <div class="profile_text">
-                {{- with .Site.Params.profileMode.subtitle }}
-<div class="subtitle"
-     style="color:#000000; font-size:1.35em; line-height:1.7; margin-bottom:20px;">
-    {{ . | markdownify }}
-    {{- with $.Site.Params.profileMode.buttons }}
-        {{- $first := index . 0 }}
-        {{- with $first }}
-            &nbsp;<a href="{{ .url | absLangURL }}" target="_blank" rel="noopener noreferrer">Here is my CV</a>.
-        {{- end }}
-    {{- end }}
-</div>
-{{- end }}
+                <!-- Intro line + CV link, same style as description -->
+                <div class="description description-intro">
+                    Hi, I am a PhD student in Economics at Bocconi University. 
+                    <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" class="cv-link">
+                        Here is my CV.
+                    </a>
+                </div>
+
                 {{- with .Site.Params.profileMode.description }}
-                <div class="description">{{ . | markdownify }}</div>
+                <div class="description">
+                    {{ . | markdownify }}
+                </div>
                 {{- end }}
                 
                 {{- with .Site.Params.profileMode.workingPapers }}
@@ -118,12 +116,15 @@
 </article>
 
 <style>
-/* Anchor this article to the left instead of centered narrow column */
+/* Make the main content area use the full width and hug the left */
+body.home .main {
+    max-width: 100%;
+    margin: 0;
+}
+
 #profile-mode {
     max-width: 1200px;
-    margin-left: 40px;
-    margin-right: auto;
-    margin-top: 40px;
+    margin: 40px 40px 40px 24px; /* small left margin, not a huge gutter */
 }
 
 /* Main layout */
@@ -189,32 +190,24 @@
     color: #000000;
 }
 
-/* Subtitle + inline CV link */
-.profile_text .subtitle {
-    font-size: 1.35em !important;
-    color: #000000 !important;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.profile_text .subtitle p {
-    font-size: 1em !important;
-    color: #000000 !important;
-    margin: 0;
-}
-
-.subtitle,
-.subtitle * {
-    color: #000000 !important;
-}
-    
-.profile_text .description {
+/* Intro + description share the same vibe */
+.description {
     font-size: 1.35em;
     color: #000000;
     line-height: 1.7;
     margin-top: 35px;
 }
 
+.description-intro {
+    margin-top: 0; /* intro sits right under photo block */
+}
+
+/* CV link should look like a clear link */
+.cv-link {
+    text-decoration: underline;
+}
+
+/* Working papers */
 .working-papers {
     margin-top: 50px;
 }
@@ -268,8 +261,7 @@
 
 @media (max-width: 1200px) {
     #profile-mode {
-        margin-left: 24px;
-        margin-right: 24px;
+        margin: 32px 24px;
         max-width: none;
     }
 
@@ -350,7 +342,7 @@
 }
 
 @media (max-width: 480px) {
-    .profile_text .description {
+    .description {
         font-size: 1.1em;
     }
 
