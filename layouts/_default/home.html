@@ -33,8 +33,11 @@
             
             <div class="profile_text">
                 {{- with .Site.Params.profileMode.subtitle }}
-                <div class="subtitle">{{ . | markdownify }}</div>
-                {{- end }}
+<div class="subtitle"
+     style="color:#000000; font-size:1.35em; line-height:1.7; margin-bottom:20px;">
+    {{ . | markdownify }}
+</div>
+{{- end }}
                 {{- with .Site.Params.profileMode.description }}
                 <div class="description">{{ . | markdownify }}</div>
                 {{- end }}
