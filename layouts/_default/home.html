@@ -35,11 +35,75 @@
                 {{- with .Site.Params.profileMode.description }}
                 <div class="description">{{ . | markdownify }}</div>
                 {{- end }}
+                
                 {{- with .Site.Params.profileMode.workingPapers }}
                 <div class="working-papers">
                     <h2>{{ . }}</h2>
                     <div class="papers-content">
-                        <p>Coming soon...</p>
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                Do Elections Moderate or Polarize Political Rhetoric? (joint with Tito Boeri, Guido Tabellini)
+                            </div>
+                            <details class="paper-abstract">
+                                <summary><span>Abstract</span></summary>
+                                <p>
+                                    We study the communication strategies on Twitter-X of 367 political leaders in 21 countries,
+                                    focusing on electoral competition between populists and non-populists. We measure polarization
+                                    by the ease with which the leader can be classified as populist or not, conditional on their tweet.
+                                    We find that political rhetoric becomes more polarized before and around election dates. This happens
+                                    because, in pre-electoral quarters, opposite leaders are more likely to: (i) talk about different topics,
+                                    and (ii) frame differently the same issues. Our results are consistent with competing politicians
+                                    targeting different voters, rather than appealing to the same swing voters.
+                                </p>
+                            </details>
+                        </div>
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                What matters to voters? Identifying important ideological dimensions with partial rankings of parties
+                            </div>
+                            <details class="paper-abstract">
+                                <summary><span>Abstract</span></summary>
+                                <p>
+                                    The determinants of voting behavior are difficult to identify. In this paper, I adopt a spatial voting
+                                    framework and propose a method that uses partial rankings of parties to identify the ideological
+                                    dimensions of party competition that matter to voters. I apply this method to the German Longitudinal
+                                    Election Study from 2013–2022 that records each respondent’s partial ranking of three most preferred
+                                    parties (triples). Results indicate that (i) the Left–Right dimension rationalizes the largest share of
+                                    triples in every year, with its share falling from about 50% in 2013 to about 40% in 2022, and (ii) the
+                                    Anti-Elite dimension grows in importance over time, matching the Economy dimension by 2022. I further
+                                    suggest how to test the importance of these dimensions formally, illustrate robustness of this approach
+                                    to misreporting of party preferences due to stigma, and provide evidence that the rationalizability
+                                    results correlate in an expected way with voters' reported views and characteristics.
+                                </p>
+                            </details>
+                        </div>
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                Do Politics Matter for University Choice? (joint with Raphaelle Aulagnon)
+                            </div>
+                            <details class="paper-abstract">
+                                <summary><span>Abstract</span></summary>
+                                <p>
+                                    Do political preferences matter for the university choice of students? In this paper, we investigate
+                                    this question in the context of a polarized Western democracy—France. Using administrative data on the
+                                    universe of high school graduates in France, we first present descriptive evidence of political sorting
+                                    of students into universities. We find that (i) students are 14% more likely to apply to universities
+                                    that are closer to them in political leaning; (ii) students matched to politically congruent universities,
+                                    on average, forgo 5% of university selectivity; and (iii) the importance of political congruence intensifies
+                                    in proximity to elections. Next, leveraging a conjoint experiment with 1,040 students across 40 high schools,
+                                    we quantify the importance of political congruence relative to other university choice factors and find that
+                                    students are willing to travel approximately one additional hour to attend a university aligned with their values.
+                                    We develop a novel technique for combining administrative and experimental survey data, and use it to quantify
+                                    the importance of political sorting on welfare. Our results show that, absent political sorting, students’
+                                    applications would on average be 21 km closer to their home. This highlights potential societal welfare losses
+                                    induced by political sorting into universities.
+                                </p>
+                            </details>
+                        </div>
+
                     </div>
                 </div>
                 {{- end }}
@@ -158,6 +222,38 @@
     line-height: 1.6;
 }
 
+/* Individual paper entries */
+.paper {
+    margin-bottom: 24px;
+}
+
+.paper-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Collapsible abstract styles */
+.paper-abstract summary {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.paper-abstract summary::-webkit-details-marker {
+    display: none;
+}
+
+.paper-abstract[open] summary {
+    margin-bottom: 6px;
+}
+
+.paper-abstract p {
+    margin: 0;
+    margin-top: 4px;
+}
+
+/* Buttons */
 .profile_button {
     padding: 8px 16px;
     background: var(--theme);
@@ -322,7 +418,8 @@
     .profile_email {
         font-size: 1.1em;
     }
-}</style>
+}
+</style>
 
 {{- end }}
 
