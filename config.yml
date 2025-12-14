@@ -33,7 +33,7 @@ params:
     enabled: true
     title: "Nina Nikiforova" 
     subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
-    description: "My research interests mostly lie in political economy and applied industrial organization. I study behavior of voters and politicians, with a particular focus on elections."
+    description: "I work on questions in political economy and public economics using tools from empirical IO and structural econometrics."
     workingPapers: "Working Papers"
     imageUrl: "/IMAGE4.jpg"
     imageWidth: 500
