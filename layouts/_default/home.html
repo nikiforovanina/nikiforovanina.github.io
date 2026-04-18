@@ -145,9 +145,10 @@ body.home .main {
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 160px !important;
+    gap: 80px;
     width: 100%;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .profile_left {
@@ -192,10 +193,9 @@ body.home .main {
 .profile_text {
     flex: 1;
     width: 100%;
-    min-width: 500px;
+    min-width: 0;        /* was 500px — this was breaking the layout */
     color: #000000;
 }
-
 /* Intro + description share the same vibe */
 .description {
     font-size: 1.35em;
