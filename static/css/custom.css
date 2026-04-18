@@ -4,8 +4,8 @@
 .profile {
     display: flex;
     align-items: flex-start;
-    gap: 60px;
-    max-width: 1400px;
+    gap: 120px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 60px 20px;
 }
