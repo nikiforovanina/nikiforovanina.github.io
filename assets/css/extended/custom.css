@@ -7,11 +7,10 @@
 }
 
 .profile_inner {
-    display: flex !important;
-    align-items: flex-start !important;
-    gap: 150px !important;
+    display: grid !important;
+    grid-template-columns: 200px auto !important;
+    column-gap: 40px !important;
     width: 100% !important;
-    max-width: 2000px !important;
 }
 
 .profile_left {
@@ -93,7 +92,7 @@
 .main {
     margin-left: auto !important;
     margin-right: auto !important;
-    max-width: 900px !important;    /* you can increase/decrease this */
+    max-width: 1100px !important;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
