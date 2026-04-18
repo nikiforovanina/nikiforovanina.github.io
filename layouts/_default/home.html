@@ -21,7 +21,7 @@
             <div class="profile_text">
                 <!-- Intro line + CV link, same style as description -->
                                      <div class="description description-intro">
-                    Welcome! I am a PhD student in Economics at Bocconi University.<br><br>
+                    Welcome! I am a PhD student in Economics at Bocconi University. I work on questions in political economy and public economics using tools from empirical IO and structural econometrics.<br><br>
                     <a href="/nina_cv.pdf" target="_blank" rel="noopener noreferrer" class="cv-link">Here is my CV.</a><br>
                     {{- with $.Site.Params.profileMode.email }}
                     You can contact me at: {{ . }}
@@ -29,9 +29,7 @@
                 </div>
 
                 {{- with .Site.Params.profileMode.description }}
-                <div class="description">
-                    {{ . | markdownify }}
-                </div>
+               
                 {{- end }}
                 
                 {{- with .Site.Params.profileMode.workingPapers }}
