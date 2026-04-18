@@ -117,9 +117,21 @@ body, .profile, .description, .papers-content, .paper-title, .paper-abstract, .p
 }
 /* Make the main content area use the full width and hug the left */
 body.home .main {
-    max-width: 100%;
-    margin: 0;
-    background-color: #ffffff;   /* ADD THIS */
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 24px !important;
+    background-color: #ffffff !important;
+}
+
+.post {
+    max-width: none !important;
+}
+
+#profile-mode {
+    max-width: 1400px;
+    width: 100%;
+    margin: 40px 0;
 }
 
 #profile-mode {
@@ -187,11 +199,12 @@ body.home .main {
 }
 
 .profile_text {
-    flex: 1;
-    width: 100%;
-    min-width: 0;        /* was 500px — this was breaking the layout */
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
     color: #000000;
 }
+     
 /* Intro + description share the same vibe */
 .description {
     font-size: 1.35em;
