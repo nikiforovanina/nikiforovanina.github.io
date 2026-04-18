@@ -1,7 +1,10 @@
 {{- define "main" }}
 
 <article class="post" id="profile-mode">
-     <div class="profile">                                
+     <div class="profile">   
+           {{- with .Site.Params.profileMode.title }}
+        <div class="profile_name">{{ . }}</div>
+        {{- end }}
         <div class="profile_inner">
             <div class="profile_left">
                 {{- with .Site.Params.profileMode.imageUrl }}
