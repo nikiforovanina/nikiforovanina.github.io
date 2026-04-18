@@ -115,6 +115,10 @@
 </article>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600&display=swap');
+body, .profile, .description, .papers-content, .paper-title, .paper-abstract, .profile_email {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
 /* Make the main content area use the full width and hug the left */
 body.home .main {
     max-width: 100%;
@@ -141,7 +145,7 @@ body.home .main {
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 60px;                 /* was: 120px */
+    gap: 150px;                 /* was: 120px */
     width: 100%;
     justify-content: flex-start;
 }
@@ -179,9 +183,9 @@ body.home .main {
 }
 
 .profile_email {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #000000;
-    text-align: left;          /* was: center */
+    text-align: center;
     font-weight: 400;
 }
 
@@ -232,7 +236,7 @@ body.home .main {
 }
 
 .paper-title {
-    font-weight: 600;
+    font-weight: 400;   /* was: 600 */
     margin-bottom: 4px;
     color: #000000;
 }
