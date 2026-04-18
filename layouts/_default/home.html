@@ -152,28 +152,21 @@ body.home .main {
 }
 
 .profile_inner {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;                 /* was: 80px */
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 40px;
+    row-gap: 20px;
     width: 100%;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
 }
 
 .profile_left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    flex-shrink: 0;
-    width: 260px;
+    width: 200px;
 }
 
 .profile_image img {
-    border-radius: 0px !important;
-    object-fit: cover;
-    width: 260px !important;
-    height: 260px !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
 }
 
 .profile_name {
