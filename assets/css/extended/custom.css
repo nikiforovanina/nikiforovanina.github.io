@@ -79,12 +79,23 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .profile_inner {
-        flex-direction: column !important;
-        align-items: center !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        column-gap: 0 !important;
+        row-gap: 24px !important;
     }
-    
+
+    .profile_image img {
+        width: 200px !important;
+        height: auto !important;
+    }
+
     .profile .profile_text {
-        text-align: center !important;
+        text-align: left !important;
+    }
+
+    .profile_name {
+        font-size: 1.8em !important;
     }
 }
 
