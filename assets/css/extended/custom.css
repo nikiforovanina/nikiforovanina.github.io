@@ -8,7 +8,7 @@
 
 .profile_inner {
     display: grid !important;
-    grid-template-columns: 300px auto !important;
+   grid-template-columns: 340px auto !important;
     column-gap: 40px !important;
     width: 100% !important;
 }
