@@ -9,9 +9,9 @@
 .profile_inner {
     display: flex !important;
     align-items: flex-start !important;
-    gap: 100px !important;
+    gap: 150px !important;
     width: 100% !important;
-    max-width: 1400px !important;
+    max-width: 2000px !important;
 }
 
 .profile_left {
