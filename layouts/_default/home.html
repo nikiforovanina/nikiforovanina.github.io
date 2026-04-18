@@ -15,21 +15,19 @@
                 </div>
                 {{- end }}
                 
-                <div class="profile_contact">
-                    {{- with .Site.Params.profileMode.email }}
-                    <div class="profile_email">{{ . }}</div>
-                    {{- end }}
-                    <!-- no button here anymore -->
-                </div>
+                
             </div>
             
             <div class="profile_text">
                 <!-- Intro line + CV link, same style as description -->
-                <div class="description description-intro">
+                                <div class="description description-intro">
                     Welcome! I am a PhD student in Economics at Bocconi University. 
                     <a href="/nina_cv.pdf" target="_blank" rel="noopener noreferrer" class="cv-link">
                         Here is my CV.
                     </a>
+                    {{- with $.Site.Params.profileMode.email }}
+                    You can contact me at: {{ . }}
+                    {{- end }}
                 </div>
 
                 {{- with .Site.Params.profileMode.description }}
@@ -145,7 +143,7 @@ body.home .main {
 .profile_inner {
     display: flex;
     align-items: flex-start;
-    gap: 80px;
+    gap: 50px;                 /* was: 80px */
     width: 100%;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -154,17 +152,17 @@ body.home .main {
 .profile_left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;   
+    align-items: flex-start;
     gap: 16px;
     flex-shrink: 0;
-    width: 280px;              
+    width: 200px;              /* was: 280px */
 }
 
 .profile_image img {
     border-radius: 0px !important;
     object-fit: cover;
-    width: 280px !important;   /* was: 220px */
-    height: 280px !important;  /* was: 220px */
+    width: 200px !important;   /* was: 280px */
+    height: 200px !important;  /* was: 280px */
 }
 
 .profile_name {
