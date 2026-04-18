@@ -9,7 +9,7 @@
 .profile_inner {
     display: flex !important;
     align-items: flex-start !important;
-    gap: 30px !important;
+    gap: 100px !important;
     width: 100% !important;
     max-width: 1400px !important;
 }
