@@ -8,7 +8,7 @@
 
 .profile_inner {
     display: grid !important;
-    grid-template-columns: 260px auto !important;
+    grid-template-columns: 300px auto !important;
     column-gap: 40px !important;
     width: 100% !important;
 }
@@ -107,4 +107,19 @@
 body, .main, .post, h1, h2, h3, p, a, li, div {
     font-family: 'Roboto', Helvetica, sans-serif !important;
     font-weight: 200;
+}
+
+.logo {
+    display: none !important;
+}
+
+.working-papers, .working-papers h2, .paper-title,
+.papers-content, .paper-abstract, .paper-abstract p,
+.paper-abstract summary {
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-weight: 200 !important;
+}
+
+.working-papers h2 {
+    font-weight: 500 !important;
 }
