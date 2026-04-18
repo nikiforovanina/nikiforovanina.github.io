@@ -103,3 +103,8 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+body, .main, .post, h1, h2, h3, p, a, li, div {
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-weight: 200;
+}
