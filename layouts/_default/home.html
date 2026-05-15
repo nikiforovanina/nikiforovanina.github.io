@@ -41,6 +41,11 @@
                             <div class="paper-title">
                                 Do Elections Moderate or Polarize Political Rhetoric? (joint with Tito Boeri, Guido Tabellini)
                             </div>
+                            <div class="paper-links">
+                                <a href="https://cepr.org/system/files/publication-files/DP21317.pdf" target="_blank" rel="noopener noreferrer">Working paper</a>
+                                <span class="paper-links-sep">|</span>
+                                <a href="https://cepr.org/voxeu/columns/when-and-why-political-leaders-polarise-rhetoric-evidence-twitterx" target="_blank" rel="noopener noreferrer">VoxEU column</a>
+                            </div>
                             <details class="paper-abstract">
                                 <summary><span>Abstract</span></summary>
                                 <p>
@@ -83,19 +88,16 @@
                             <details class="paper-abstract">
                                 <summary><span>Abstract</span></summary>
                                 <p>
-                                    Do political preferences matter for the university choice of students? In this paper, we investigate
-                                    this question in the context of a polarized Western democracy—France. Using administrative data on the
-                                    universe of high school graduates in France, we first present descriptive evidence of political sorting
-                                    of students into universities. We find that (i) students are 14% more likely to apply to universities
-                                    that are closer to them in political leaning; (ii) students matched to politically congruent universities,
-                                    on average, forgo 5% of university selectivity; and (iii) the importance of political congruence intensifies
-                                    in proximity to elections. Next, leveraging a conjoint experiment with 1,040 students across 40 high schools,
-                                    we quantify the importance of political congruence relative to other university choice factors and find that
-                                    students are willing to travel approximately one additional hour to attend a university aligned with their values.
-                                    We develop a novel technique for combining administrative and experimental survey data, and use it to quantify
-                                    the importance of political sorting on welfare. Our results show that, absent political sorting, students’
-                                    applications would on average be 21 km closer to their home. This highlights potential societal welfare losses
-                                    induced by political sorting into universities.
+                                    Do political preferences shape where students choose to study? We investigate this question in France,
+                                    combining administrative data on the universe of Parcoursup applicants with the conjoint survey experiment
+                                    conducted with 1,040 final-year high school students. We document that students are more likely to apply
+                                    to universities whose campus political climate aligns with their own political leaning. Survey evidence
+                                    confirms that campus political climate enters students' university utility function with a weight comparable
+                                    to distance, since students are willing to travel approximately one additional hour to attend a
+                                    climate-aligned institution. To move from correlation to causation, we combine the two data sources following
+                                    a ratio-transfer approach that corrects for endogeneity. Counterfactual simulations removing political taste
+                                    imply students would attend programs closer to home and at marginally lower academic selectivity in partial
+                                    equilibrium. The reallocation is concentrated among high-grade and working-class students.
                                 </p>
                             </details>
                         </div>
@@ -243,10 +245,21 @@ body.home .main {
     color: #000000;
 }
 
-.paper-abstract {
-  display: none;
+/* Links for an individual paper (e.g., working paper, VoxEU column) */
+.paper-links {
+    margin-bottom: 6px;
+    font-size: 0.95em;
 }
 
+.paper-links a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.paper-links-sep {
+    margin: 0 6px;
+    color: #000000;
+}
 
 .paper-abstract summary {
     cursor: pointer;
@@ -365,6 +378,10 @@ body.home .main {
     .paper-abstract summary,
     .paper-abstract p {
         font-size: 0.95em;
+    }
+
+    .paper-links {
+        font-size: 0.9em;
     }
 }
 
