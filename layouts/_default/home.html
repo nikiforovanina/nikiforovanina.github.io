@@ -5,127 +5,133 @@
 
         <div class="profile_inner">
 
+            <!-- LEFT COLUMN: photo + identity block underneath -->
             <div class="profile_left">
                 {{- with .Site.Params.profileMode.imageUrl }}
                 <div class="profile_image">
                     <img draggable="false" src="{{.}}" alt="{{ $.Site.Params.profileMode.imageTitle | default "profile image" }}" />
                 </div>
                 {{- end }}
+
+                <div class="profile_identity">
+                    {{- with .Site.Params.profileMode.title }}
+                    <h1 class="profile_name">{{ . }}</h1>
+                    {{- end }}
+
+                    <div class="profile_position">
+                        PhD Student in Economics at Bocconi University
+                    </div>
+
+                    <div class="profile_meta">
+                        <a href="/nina_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                    </div>
+
+                    {{- with $.Site.Params.profileMode.email }}
+                    <div class="profile_meta">
+                        <a href="mailto:{{ . }}">{{ . }}</a>
+                    </div>
+                    {{- end }}
+                </div>
             </div>
 
-            <div class="profile_text">
-                {{- with .Site.Params.profileMode.title }}
-                <h1 class="profile_name">{{ . }}</h1>
-                {{- end }}
-
-                <div class="profile_position">
-                    PhD Student in Economics at Bocconi University
-                </div>
-
-                <div class="profile_meta">
-                    <a href="/nina_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-                </div>
-
-                {{- with $.Site.Params.profileMode.email }}
-                <div class="profile_meta">
-                    <a href="mailto:{{ . }}">{{ . }}</a>
-                </div>
-                {{- end }}
+            <!-- RIGHT COLUMN: bio + working papers -->
+            <div class="profile_right">
 
                 <div class="bio">
                     <p>
-                        I work on questions in political economy and public economics using
+                        Hi! I work on questions in political economy and public economics using
                         tools from empirical IO and structural econometrics.
                     </p>
                 </div>
+
+                {{- with .Site.Params.profileMode.workingPapers }}
+                <div class="working-papers">
+                    <h2>{{ . }}</h2>
+                    <div class="papers-content">
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                Do Elections Moderate or Polarize Political Rhetoric?
+                            </div>
+                            <div class="paper-coauthors">
+                                (with Tito Boeri and Guido Tabellini)
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://cepr.org/system/files/publication-files/DP21317.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                                <span class="paper-links-sep">|</span>
+                                <a href="https://cepr.org/voxeu/columns/when-and-why-political-leaders-polarise-rhetoric-evidence-twitterx" target="_blank" rel="noopener noreferrer">VoxEU column</a>
+                                <span class="paper-links-sep">|</span>
+                                <details class="paper-abstract">
+                                    <summary><span>Abstract</span></summary>
+                                    <p>
+                                        We study the communication strategies on Twitter-X of 367 political leaders in 21 countries,
+                                        focusing on electoral competition between populists and non-populists. We measure polarization
+                                        by the ease with which the leader can be classified as populist or not, conditional on their tweet.
+                                        We find that political rhetoric becomes more polarized before and around election dates. This happens
+                                        because, in pre-electoral quarters, opposite leaders are more likely to: (i) talk about different topics,
+                                        and (ii) frame differently the same issues. Our results are consistent with competing politicians
+                                        targeting different voters, rather than appealing to the same swing voters.
+                                    </p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                What matters to voters? Identifying important ideological dimensions with partial rankings of parties
+                            </div>
+                            <div class="paper-links">
+                                <details class="paper-abstract">
+                                    <summary><span>Abstract</span></summary>
+                                    <p>
+                                        The determinants of voting behavior are difficult to identify. In this paper, I adopt a spatial voting
+                                        framework and propose a method that uses partial rankings of parties to identify the ideological
+                                        dimensions of party competition that matter to voters. I apply this method to the German Longitudinal
+                                        Election Study from 2013–2022 that records each respondent’s partial ranking of three most preferred
+                                        parties (triples). Results indicate that (i) the Left–Right dimension rationalizes the largest share of
+                                        triples in every year, with its share falling from about 50% in 2013 to about 40% in 2022, and (ii) the
+                                        Anti-Elite dimension grows in importance over time, matching the Economy dimension by 2022. I further
+                                        suggest how to test the importance of these dimensions formally, illustrate robustness of this approach
+                                        to misreporting of party preferences due to stigma, and provide evidence that the rationalizability
+                                        results correlate in an expected way with voters' reported views and characteristics.
+                                    </p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <div class="paper-title">
+                                Do Politics Matter for University Choice?
+                            </div>
+                            <div class="paper-coauthors">
+                                (with Raphaelle Aulagnon)
+                            </div>
+                            <div class="paper-links">
+                                <details class="paper-abstract">
+                                    <summary><span>Abstract</span></summary>
+                                    <p>
+                                        Do political preferences shape where students choose to study? We investigate this question in France,
+                                        combining administrative data on the universe of Parcoursup applicants with the conjoint survey experiment
+                                        conducted with 1,040 final-year high school students. We document that students are more likely to apply
+                                        to universities whose campus political climate aligns with their own political leaning. Survey evidence
+                                        confirms that campus political climate enters students' university utility function with a weight comparable
+                                        to distance, since students are willing to travel approximately one additional hour to attend a
+                                        climate-aligned institution. To move from correlation to causation, we combine the two data sources following
+                                        a ratio-transfer approach that corrects for endogeneity. Counterfactual simulations removing political taste
+                                        imply students would attend programs closer to home and at marginally lower academic selectivity in partial
+                                        equilibrium. The reallocation is concentrated among high-grade and working-class students.
+                                    </p>
+                                </details>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {{- end }}
+
             </div>
 
         </div>
-
-        {{- with .Site.Params.profileMode.workingPapers }}
-        <div class="working-papers">
-            <h2>{{ . }}</h2>
-            <div class="papers-content">
-
-                <div class="paper">
-                    <div class="paper-title">
-                        Do Elections Moderate or Polarize Political Rhetoric?
-                    </div>
-                    <div class="paper-coauthors">
-                        (with Tito Boeri and Guido Tabellini)
-                    </div>
-                    <div class="paper-links">
-                        <a href="https://cepr.org/system/files/publication-files/DP21317.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-                        <span class="paper-links-sep">|</span>
-                        <a href="https://cepr.org/voxeu/columns/when-and-why-political-leaders-polarise-rhetoric-evidence-twitterx" target="_blank" rel="noopener noreferrer">VoxEU column</a>
-                        <span class="paper-links-sep">|</span>
-                        <details class="paper-abstract">
-                            <summary><span>Abstract</span></summary>
-                            <p>
-                                We study the communication strategies on Twitter-X of 367 political leaders in 21 countries,
-                                focusing on electoral competition between populists and non-populists. We measure polarization
-                                by the ease with which the leader can be classified as populist or not, conditional on their tweet.
-                                We find that political rhetoric becomes more polarized before and around election dates. This happens
-                                because, in pre-electoral quarters, opposite leaders are more likely to: (i) talk about different topics,
-                                and (ii) frame differently the same issues. Our results are consistent with competing politicians
-                                targeting different voters, rather than appealing to the same swing voters.
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="paper">
-                    <div class="paper-title">
-                        What matters to voters? Identifying important ideological dimensions with partial rankings of parties
-                    </div>
-                    <div class="paper-links">
-                        <details class="paper-abstract">
-                            <summary><span>Abstract</span></summary>
-                            <p>
-                                The determinants of voting behavior are difficult to identify. In this paper, I adopt a spatial voting
-                                framework and propose a method that uses partial rankings of parties to identify the ideological
-                                dimensions of party competition that matter to voters. I apply this method to the German Longitudinal
-                                Election Study from 2013–2022 that records each respondent’s partial ranking of three most preferred
-                                parties (triples). Results indicate that (i) the Left–Right dimension rationalizes the largest share of
-                                triples in every year, with its share falling from about 50% in 2013 to about 40% in 2022, and (ii) the
-                                Anti-Elite dimension grows in importance over time, matching the Economy dimension by 2022. I further
-                                suggest how to test the importance of these dimensions formally, illustrate robustness of this approach
-                                to misreporting of party preferences due to stigma, and provide evidence that the rationalizability
-                                results correlate in an expected way with voters' reported views and characteristics.
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="paper">
-                    <div class="paper-title">
-                        Do Politics Matter for University Choice?
-                    </div>
-                    <div class="paper-coauthors">
-                        (with Raphaelle Aulagnon)
-                    </div>
-                    <div class="paper-links">
-                        <details class="paper-abstract">
-                            <summary><span>Abstract</span></summary>
-                            <p>
-                                Do political preferences shape where students choose to study? We investigate this question in France,
-                                combining administrative data on the universe of Parcoursup applicants with the conjoint survey experiment
-                                conducted with 1,040 final-year high school students. We document that students are more likely to apply
-                                to universities whose campus political climate aligns with their own political leaning. Survey evidence
-                                confirms that campus political climate enters students' university utility function with a weight comparable
-                                to distance, since students are willing to travel approximately one additional hour to attend a
-                                climate-aligned institution. To move from correlation to causation, we combine the two data sources following
-                                a ratio-transfer approach that corrects for endogeneity. Counterfactual simulations removing political taste
-                                imply students would attend programs closer to home and at marginally lower academic selectivity in partial
-                                equilibrium. The reallocation is concentrated among high-grade and working-class students.
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        {{- end }}
 
     </div>
 </article>
@@ -135,6 +141,7 @@
 
 :root {
     --main-width: 1080px;
+    --photo-width: 260px;
     --text-color: #1a1a1a;
     --link-color: #1a1a1a;
     --muted-color: #4a4a4a;
@@ -158,7 +165,7 @@ body,
     color: var(--text-color);
 }
 
-/* Main content area: full width but content hugs left */
+/* Main content area: hugs the left */
 body.home .main {
     max-width: 100% !important;
     width: 100% !important;
@@ -176,30 +183,26 @@ body.home .main {
 #profile-mode {
     max-width: var(--main-width);
     width: 100%;
-    margin: 50px auto 50px 0;   /* hug the left of the page */
+    margin: 50px auto 50px 0;
 }
 
-/* ---------- Top block: photo + name/contact/bio ---------- */
+/* ---------- Two-column layout ---------- */
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    padding: 0 0 30px 0;
     width: 100%;
 }
 
 .profile_inner {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: var(--photo-width) 1fr;
     column-gap: 50px;
     align-items: start;
     width: 100%;
 }
 
+/* LEFT COLUMN: photo + identity stacked underneath */
 .profile_left {
-    width: 340px;
+    width: var(--photo-width);
 }
 
 .profile_image img {
@@ -210,32 +213,30 @@ body.home .main {
     display: block;
 }
 
-.profile_text {
-    min-width: 0;
-    max-width: 100%;
-    padding-top: 6px;
+.profile_identity {
+    margin-top: 18px;
 }
 
 .profile_name {
     font-family: var(--serif);
-    font-size: 2.6em;
+    font-size: 1.9em;
     font-weight: 700;
     color: var(--text-color);
     line-height: 1.15;
-    margin: 0 0 14px 0;
-    letter-spacing: -0.5px;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.3px;
 }
 
 .profile_position {
-    font-size: 1.2em;
+    font-size: 1em;
     color: var(--text-color);
-    margin: 0 0 14px 0;
+    margin: 0 0 10px 0;
     line-height: 1.4;
 }
 
 .profile_meta {
-    font-size: 1.05em;
-    margin: 4px 0;
+    font-size: 1em;
+    margin: 3px 0;
     line-height: 1.45;
 }
 
@@ -250,12 +251,19 @@ body.home .main {
     opacity: 0.7;
 }
 
+/* RIGHT COLUMN: bio + papers */
+.profile_right {
+    min-width: 0;
+    max-width: 100%;
+    padding-top: 6px;
+}
+
 .bio {
-    margin-top: 22px;
-    font-size: 1.1em;
+    font-size: 1.15em;
     line-height: 1.65;
     color: var(--text-color);
-    max-width: 640px;
+    max-width: 680px;
+    margin-bottom: 40px;
 }
 
 .bio p {
@@ -265,14 +273,13 @@ body.home .main {
 /* ---------- Working papers ---------- */
 
 .working-papers {
-    margin-top: 10px;
     width: 100%;
-    max-width: 900px;
+    max-width: 780px;
 }
 
 .working-papers h2 {
     font-family: var(--serif);
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 700;
     margin: 0 0 18px 0;
     color: var(--text-color);
@@ -300,7 +307,6 @@ body.home .main {
     font-size: 0.97em;
 }
 
-/* The PDF | VoxEU | Abstract row */
 .paper-links {
     font-size: 0.97em;
     display: flex;
@@ -352,7 +358,7 @@ body.home .main {
     font-size: 1em;
     line-height: 1.55;
     display: block;
-    max-width: 780px;
+    max-width: 720px;
 }
 
 /* ---------- Responsive ---------- */
@@ -365,15 +371,14 @@ body.home .main {
 }
 
 @media (max-width: 860px) {
+    :root {
+        --photo-width: 220px;
+    }
     .profile_inner {
-        grid-template-columns: 280px 1fr;
         column-gap: 36px;
     }
-    .profile_left {
-        width: 280px;
-    }
     .profile_name {
-        font-size: 2.2em;
+        font-size: 1.6em;
     }
 }
 
@@ -388,7 +393,8 @@ body.home .main {
     }
 
     .profile_left {
-        width: 220px;
+        width: 100%;
+        max-width: 260px;
     }
 
     .profile_image img {
@@ -397,19 +403,16 @@ body.home .main {
     }
 
     .profile_name {
-        font-size: 2em;
-    }
-
-    .profile_position {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
 
     .bio {
         font-size: 1.05em;
+        margin-bottom: 30px;
     }
 
     .working-papers h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .paper-title {
