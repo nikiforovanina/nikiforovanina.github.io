@@ -248,3 +248,12 @@
 .profile .container {
     max-width: 1000px;
 }
+
+.paper-coauthors a {
+    color: #0066cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.paper-coauthors a:hover {
+    text-decoration: none;
+}
