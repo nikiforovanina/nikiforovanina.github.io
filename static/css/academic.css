@@ -257,3 +257,9 @@
 .paper-coauthors a:hover {
     text-decoration: none;
 }
+
+.paper-coauthors a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
