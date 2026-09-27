@@ -11,7 +11,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 
 params:
-  description: "PhD Student in Economics at Bocconi University"
+  description: "PhD Candidate in Economics at Bocconi University"
   author: "Nina Nikiforova"
   defaultTheme: "light"
   disableThemeToggle: true
@@ -32,7 +32,7 @@ params:
   profileMode:
     enabled: true
     title: "Nina Nikiforova" 
-    subtitle: "Hi, I am a PhD student in Economics at Bocconi University"
+    subtitle: "Hi, I am a PhD Candidate in Economics at Bocconi University. I am on the 2026-2027 academic job market."
     description: "I work on questions in political economy and public economics using tools from empirical IO and structural econometrics."
     workingPapers: "Working Papers"
     imageUrl: "/nina_photo.jpeg"
