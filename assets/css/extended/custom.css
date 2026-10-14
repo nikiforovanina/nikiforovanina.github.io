@@ -134,3 +134,7 @@ body, .main, .post, h1, h2, h3, p, a, li, div {
 .working-papers h2 {
     font-weight: 500 !important;
 }
+
+.working-papers + .working-papers {
+    margin-top: 40px;
+}
