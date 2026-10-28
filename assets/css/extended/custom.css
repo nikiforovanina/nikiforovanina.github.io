@@ -140,7 +140,9 @@ body, .main, .post, h1, h2, h3, p, a, li, div {
 }
 
 /* Abstract toggle: label stays in place, text appears below */
-.paper-links details.paper-abstract,
+.paper-links details.paper-abstract {
+    display: contents;
+}
 .paper-links details.paper-abstract summary {
     display: inline;
 }
