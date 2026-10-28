@@ -138,3 +138,15 @@ body, .main, .post, h1, h2, h3, p, a, li, div {
 .working-papers + .working-papers {
     margin-top: 40px;
 }
+
+/* Abstract toggle: label stays in place, text appears below */
+.paper-links details.paper-abstract,
+.paper-links details.paper-abstract summary {
+    display: inline;
+}
+.paper-links details.paper-abstract summary {
+    cursor: pointer;
+}
+.paper-links details.paper-abstract p {
+    margin-top: 8px;
+}
