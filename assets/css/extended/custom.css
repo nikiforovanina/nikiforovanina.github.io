@@ -152,3 +152,29 @@ body, .main, .post, h1, h2, h3, p, a, li, div {
 .paper-links details.paper-abstract p {
     margin-top: 8px;
 }
+
+
+/* Pink accents, dress-matched */
+.paper-links a, .paper-links summary, .profile_meta a[href$=".pdf"] {
+    color: #A32B4F !important;
+    font-weight: 600 !important;
+}
+.profile_meta a[href$=".pdf"] {
+    font-size: 18px !important;
+}
+a[href^="mailto"] {
+    color: #A32B4F !important;
+    font-weight: 400 !important;
+    white-space: nowrap;
+}
+.paper-links a:hover, .paper-links summary:hover,
+.profile_meta a:hover, a[href^="mailto"]:hover {
+    color: #852340 !important;
+}
+.paper.jmp-paper {
+    border-left: 3px solid #A32B4F;
+    padding-left: 14px;
+}
+@media (max-width: 480px) {
+    a[href^="mailto"] { font-size: 14px !important; }
+}

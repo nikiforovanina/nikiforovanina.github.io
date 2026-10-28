@@ -47,14 +47,12 @@
                     </p>
                 </div>
 
-                {{- with .Site.Params.profileMode.workingPapers }}
                 <div class="working-papers">
-                    <h2>{{ . }}</h2>
+                    <h2>Job Market Paper</h2>
                     <div class="papers-content">
-
-                        <div class="paper">
+                        <div class="paper jmp-paper">
                             <div class="paper-title">
-                                What Do Populist Voters Want? A Nonparametric Revealed Preference Approach <span class="jmp-label">(JMP)</span>
+                                What Do Populist Voters Want? A Nonparametric Revealed Preference Approach
                             </div>
                             <div class="paper-links">
                                 <a href="https://cepr.org/voxeu/columns/chasing-far-right-does-not-pay-centre-right-parties-evidence-germanys-2025-election" target="_blank" rel="noopener noreferrer">VoxEU column</a>
@@ -78,6 +76,15 @@
                                 </details>
                             </div>
                         </div>
+
+                        
+                    </div>
+                </div>
+
+                {{- with .Site.Params.profileMode.workingPapers }}
+                <div class="working-papers">
+                    <h2>{{ . }}</h2>
+                    <div class="papers-content">
 
                         <div class="paper">
                             <div class="paper-title">
