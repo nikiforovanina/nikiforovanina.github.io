@@ -178,3 +178,9 @@ a[href^="mailto"] {
 @media (max-width: 480px) {
     a[href^="mailto"] { font-size: 14px !important; }
 }
+
+.bio a.cv-link {
+    color: #A32B4F !important;
+    font-weight: 600 !important;
+}
+.bio a.cv-link:hover { color: #852340 !important; }
