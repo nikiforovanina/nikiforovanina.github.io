@@ -184,3 +184,8 @@ a[href^="mailto"] {
     font-weight: 600 !important;
 }
 .bio a.cv-link:hover { color: #852340 !important; }
+
+.paper-status {
+    color: #1a1a1a;
+    font-weight: 600 !important;
+}
