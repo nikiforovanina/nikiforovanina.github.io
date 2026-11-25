@@ -189,3 +189,11 @@ a[href^="mailto"] {
     color: #1a1a1a;
     font-weight: 600 !important;
 }
+
+.paper-award {
+    font-style: italic;
+    font-weight: 200 !important;
+    font-size: 13px;
+    color: #555;
+    margin: 2px 0 4px;
+}
