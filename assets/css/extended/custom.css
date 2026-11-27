@@ -197,3 +197,9 @@ a[href^="mailto"] {
     color: #555;
     margin: 2px 0 4px;
 }
+
+.paper-award a {
+    color: #A32B4F !important;
+    text-decoration: underline;
+}
+.paper-award a:hover { color: #852340 !important; }
